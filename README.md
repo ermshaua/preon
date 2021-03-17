@@ -29,9 +29,7 @@ We can now search for drug names and retrieve their CHEMBL ids. Let's search for
 (['avastin'], [['CHEMBL1201583']], {'match_type': 'exact'})
 ```
 
-As a result for our query, we get list of matching normalized drug names (in this case `['avastin']`), a list of associated CHEMBL ids for every returned drug name `[['CHEMBL1201583']]` and some meta information about the matching `{'match_type': 'exact'}`.
-
-We can also search for multi-token drug names like "Ixabepilone Epothilone B analog" and find CHEMBL ids for the relevant tokens.
+As a result for our query, we get list of matching normalized drug names (in this case `['avastin']`), a list of associated CHEMBL ids for every returned drug name `[['CHEMBL1201583']]` and some meta information about the matching `{'match_type': 'exact'}`. We can also search for multi-token drug names like "Ixabepilone Epothilone B analog" and find CHEMBL ids for the relevant tokens.
 
 ```python3
 >>> normalizer.query("Ixabepilone Epothilone B analog")
@@ -39,9 +37,7 @@ We can also search for multi-token drug names like "Ixabepilone Epothilone B ana
 >>> 
 ```
 
-We find the relevant drug name `['ixabepilone']` and PRONO provides the meta information that the matching is based on a substring.
-
-Let's take a harder example, say "Isavuconazonium", but misspell it as "Isavuconaconium".
+We find the relevant drug name `['ixabepilone']` and PRONO provides the meta information that the matching is based on a substring. Let's take a harder example, say "Isavuconazonium", but misspell it as "Isavuconaconium".
 
 ```python3
 >>> normalizer.query("Isavuconaconium")
