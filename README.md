@@ -1,5 +1,5 @@
 # PRONO (PRecision ONcology NOrmalization)
-PRONO (PRecision Oncology NOrmalization) is a fuzzy search tool for medical entities.
+PRONO is a fuzzy search tool for medical entities.
 
 ## Installation
 
