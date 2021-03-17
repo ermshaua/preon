@@ -37,7 +37,7 @@ As a result for our query, we get list of matching normalized drug names (in thi
 >>> 
 ```
 
-We find the relevant drug name `['ixabepilone']` and PRONO provides the meta information that the matching is based on a substring. Let's take a harder example, say "Isavuconazonium", but misspell it as "Isavuconaconium".
+We find the relevant drug name `['ixabepilone']` and PRONO provides the meta information that the matching is based on a substring. On default, PRONO only looks for 1 matching token. It can also look for n-grams by setting the `n_grams` parameter in the query method. Let's take a harder example, say "Isavuconazonium", but misspell it as "Isavuconaconium".
 
 ```python3
 >>> normalizer.query("Isavuconaconium")
