@@ -8,10 +8,42 @@ You can install PRONO with PyPi:
 
 ## Examples
 
-Let's first import PRONO.
+Let's first import the normalizer and EBI drug names with CHEMBL ids.
 
 ```python3
->>> import prono as pr
+>>> from prono.normalization import PrecisionOncologyNormalizer
+>>> from prono.drug import load_ebi_drugs
 ```
 
-...
+Let's fit the normalizer with the drug names and ids as its reference data.
+
+```python3
+>>> drug_names, chembl_ids = load_ebi_drugs()
+>>> normalizer = PrecisionOncologyNormalizer().fit(drug_names, chembl_ids)
+```
+
+We can now search for drug names and retrieve their CHEMBL ids. Let's search for the cancer drug "Avastin".
+
+```python3
+>>> normalizer.query("Avastin")
+(['avastin'], [['CHEMBL1201583']], {'match_type': 'exact'})
+```
+
+As a result for our query, we get list of matching normalized drug names (in this case `['avastin']`), a list of associated CHEMBL ids for every returned drug name `[['CHEMBL1201583']]` and some meta information about the matching `{'match_type': 'exact'}`.
+
+We can also search for drug names multi-token drug names like "Ixabepilone Epothilone B analog" and find CHEMBL ids for the relevant tokens.
+
+```python3
+>>> normalizer.query("Ixabepilone Epothilone B analog")
+(['ixabepilone'], [['CHEMBL1201752']], {'match_type': 'substring'})
+>>> 
+```
+
+Let's take a harder example, say "Isavuconazonium", but misspell it as "Isavuconaconium".
+
+```python3
+>>> normalizer.query("Isavuconaconium")
+(['isavuconazonium'], [['CHEMBL1183349']], {'match_type': 'partial', 'edit_distance': 0.0667})
+```
+
+PRONO finds the correct drug "Isavuconazonium" and provides the meta information that it is a partial match with 93% similarity.

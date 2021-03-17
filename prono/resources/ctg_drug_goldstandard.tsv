@@ -1,0 +1,98 @@
+index	nct_id	intervention_type	intervention	drug_name	chembl_id	comment
+21500	NCT00536809	Drug	capecitabine	capecitabine	CHEMBL1773	
+25991	NCT00087776	Drug	Chemotherapy	Chemotherapy		
+21439	NCT00522834	Drug	Elesclomol (STA-4783)	Elesclomol	CHEMBL1972860	
+14854	NCT02646852	Drug	PLX038	PLX038	CHEMBL2107340	
+12133	NCT01871675	Drug	Bendamustine	Bendamustine	CHEMBL487253	
+18143	NCT00923351	Drug	rhIL-7	rhIL-7	CHEMBL4297772	
+21725	NCT00498316	Drug	Rituximab	Rituximab	CHEMBL1201576	
+12669	NCT00598169	Drug	carboplatin	carboplatin	CHEMBL1351	
+2016	NCT04300244	Biological	UV1 vaccine + leukine	UV1 vaccine		
+2016	NCT04300244	Biological	UV1 vaccine + leukine	leukine	CHEMBL1201670	trade name for SARGRAMOSTIM
+2351	NCT03678883	Drug	Paclitaxel.	Paclitaxel	CHEMBL428647	
+17416	NCT03972046	Drug	Dabrafenib (BRAF Inhibitor)	Dabrafenib	CHEMBL2028663	
+11430	NCT02480114	Drug	Gabapentin	Gabapentin	CHEMBL940	
+14627	NCT03509012	Drug	Paclitaxel	Paclitaxel	CHEMBL428647	Duplikat zu NCT03678883
+16665	NCT04200066	Drug	Temozolomide, Tamoxifen, Maprotiline	Temozolomide	CHEMBL810	
+16665	NCT04200066	Drug	Temozolomide, Tamoxifen, Maprotiline	Tamoxifen	CHEMBL83	
+16665	NCT04200066	Drug	Temozolomide, Tamoxifen, Maprotiline	Maprotiline	CHEMBL21731	
+32425	NCT01511289	Drug	Radotinib	Radotinib	CHEMBL4297524	
+3699	NCT04126993	Drug	Apatinib	Apatinib	CHEMBL3186534	Synonym zu RIVOCERANIB
+30640	NCT00471471	Biological	GM-CSF	GM-CSF	CHEMBL2107881	Synonym zu REGRAMOSTIM
+27821	NCT00057616	Drug	CC-5013	CC-5013	CHEMBL848	Synonym zu LENALIDOMIDE
+6755	NCT02331498	Drug	Pazopanib	Pazopanib	CHEMBL477772	
+16481	NCT02514603	Drug	Prexasertib	Prexasertib	CHEMBL3544911	
+28181	NCT00031902	Biological	rituximab	rituximab	CHEMBL1201576	
+12170	NCT01938846	Drug	BI 860585	BI 860585		
+29490	NCT00418938	Drug	Panitumumab	Panitumumab	CHEMBL1201827	
+32243	NCT00002835	Drug	Vincristine Sulfate	Vincristine Sulfate	CHEMBL501867	
+25969	NCT00002925	Drug	Daunorubicin	Daunorubicin	CHEMBL178	
+13260	NCT02292225	Drug	Obinutuzumab	Obinutuzumab	CHEMBL1743048	
+20695	NCT00592046	Drug	ZIO-101 (Darinaparsin)	Darinaparsin	CHEMBL3247378	
+18402	NCT00895648	Drug	Pemetrexed	Pemetrexed	CHEMBL225072	
+23815	NCT00280397	Drug	E7080	E7080	CHEMBL1289601	Synonym zu LENVATINIB
+15587	NCT01300026	Drug	AMG 319	AMG 319	CHEMBL3545048	
+14494	NCT02915172	Drug	Capecitabine	Capecitabine	CHEMBL1773	
+31205	NCT00671112	Drug	Everolimus	Everolimus	CHEMBL1908360	
+14677	NCT03177252	Drug	Bupivacaine	Bupivacaine	CHEMBL1098	
+23863	NCT00275262	Drug	Matched placebo	Placebo		
+25649	NCT00003263	Drug	cisplatin	cisplatin	CHEMBL1386	
+22396	NCT00428597	Drug	Placebo	Placebo		
+4538	NCT02325557	Drug	ADXS31-142 + Pembrolizumab (MK-3475)	ADXS31-142		
+4538	NCT02325557	Drug	ADXS31-142 + Pembrolizumab (MK-3475)	Pembrolizumab	CHEMBL3137343	
+31830	NCT00599937	Drug	ATRA	ATRA	CHEMBL38	
+22546	NCT00415636	Drug	pemetrexed	pemetrexed	CHEMBL225072	homonym
+25201	NCT00114309	Drug	131I-TM601	131I-TM601	CHEMBL4298122	conjugate, maybe doublecheck with clinician / pharmacist
+5747	NCT02590003	Drug	Nab-paclitaxel	Nab-paclitaxel	CHEMBL428647	different way of preparation
+11242	NCT02226757	Drug	Paclitaxel-trastzumab	paclitaxel	CHEMBL428647	
+11242	NCT02226757	Drug	Paclitaxel-trastzumab	trastzumab	CHEMBL1201585	
+31661	NCT00002543	Drug	gallium nitrate	gallium nitrate	CHEMBL1200983	
+9861	NCT02925234	Drug	Brigatinib	Brigatinib	CHEMBL3545311	
+10786	NCT02740127	Drug	Epinephrine	Epinephrine	CHEMBL679	
+27472	NCT00019383	Biological	incomplete Freund's adjuvant	incomplete Freund's adjuvant		biological mixture
+12557	NCT03233724	Drug	Pembrolizumab	Pembrolizumab	CHEMBL3137343	
+20380	NCT00626015	Drug	temozolomide	temozolomide	CHEMBL810	
+1864	NCT04083599	Biological	GEN1042	GEN1042		biological
+1236	NCT03959241	Drug	Tacrolimus	Tacrolimus	CHEMBL269732	possible homonym
+10358	NCT04239092	Drug	9-ING-41	9-ING-41	CHEMBL483465	
+8935	NCT03678883	Drug	Gemcitabine - 28 day cycle	Gemcitabine 	CHEMBL888	
+31513	NCT03400332	Biological	Nivolumab	Nivolumab	CHEMBL2108738	
+13078	NCT02071862	Drug	CBD	CBD	CHEMBL190461	
+16827	NCT04194957	Drug	Fluoropyrimidine (capecitabine or 5-fluorouracil)	capecitabine	CHEMBL1773	
+16827	NCT04194957	Drug	Fluoropyrimidine (capecitabine or 5-fluorouracil)	5-fluorouracil	CHEMBL185	
+17143	NCT03088059	Drug	Durvalumab	Durvalumab	CHEMBL3301587	
+10394	NCT03575351	Drug	Standard of Care	Standard of Care		
+1354	NCT03498521	Drug	Pertuzumab	Pertuzumab	CHEMBL2007641	
+21649	NCT00505700	Drug	velcade	velcade	CHEMBL325041	
+23850	NCT00276601	Drug	methotrexate	methotrexate	CHEMBL34259	
+18228	NCT04337138	Drug	Gemtuzumab Ozogamicin	Gemtuzumab Ozogamicin	CHEMBL1201506	
+1890	NCT04074460	Drug	isoflurane	isoflurane	CHEMBL1256	
+1890	NCT04074460	Drug	sevoflurane	sevoflurane	CHEMBL1200694	
+1890	NCT04074460	Drug	desflurane	desflurane	CHEMBL1200733	
+11038	NCT01189253	Drug	trabectedin	trabectedin	CHEMBL450449	Duplikat in der DB -> CHEMBL1224207
+1589	NCT02145741	Drug	Xentuzumab, low dose, every week (qw)	Xentuzumab	CHEMBL4297850	
+5149	NCT03277638	Drug	Pembrolizumab at 35 days post	Pembrolizumab	CHEMBL3137343	
+26047	NCT00002704	Drug	asparaginase	asparaginase	CHEMBL2108989	
+1511	NCT02465060	Drug	Copanlisib	Copanlisib	CHEMBL3218576	
+8510	NCT01253707	Drug	AMG 337	AMG 337	CHEMBL3545212	
+23375	NCT00320190	Drug	Dasatinib	Dasatinib	CHEMBL1421	
+2810	NCT02862457	Drug	Epacadostat 100 mg	Epacadostat	CHEMBL3545369	
+21422	NCT00525525	Drug	Bevacizumab	Bevacizumab	CHEMBL1201583	
+23004	NCT01427400	Drug	Botulinum Toxin-A	Botulinum Toxin-A	CHEMBL4297862	
+1507	NCT02465060	Drug	Afatinib	Afatinib	CHEMBL1173655	
+25487	NCT00096135	Drug	leucovorin calcium	leucovorin calcium	CHEMBL1201138	
+27573	NCT00018954	Drug	etoposide	etoposide	CHEMBL44657	
+14473	NCT04498117	Biological	Oregovomab	Oregovomab	CHEMBL2107917	
+3809	NCT04291092	Drug	Immunotherapy	Immunotherapy		
+25794	NCT00003294	Biological	filgrastim	filgrastim	CHEMBL1201567	
+2865	NCT01132807	Drug	Vinblastine Sulfate	Vinblastine Sulfate	CHEMBL378544	
+6261	NCT02441803	Drug	Thymoglobulin	Thymoglobulin	CHEMBL1201650	
+10586	NCT03872947	Drug	Leucovorin	Leucovorin	CHEMBL1679	
+3089	NCT01204684	Biological	Tumor lysate-pulsed DC vaccination+0.2% resiquimod	resiquimod	CHEMBL383322	
+21156	NCT00548093	Drug	PF-00299804	PF-00299804	CHEMBL2105719	Synonyms From Alternate Forms: CHEMBL2110732
+31016	NCT00005977	Drug	doxorubicin hydrochloride	doxorubicin hydrochloride	CHEMBL359744	
+17109	NCT01086345	Drug	irinotecan hydrochloride	irinotecan hydrochloride	CHEMBL3989514	
+24028	NCT00257478	Drug	YM155	YM155	CHEMBL2105734	
+27138	NCT00075101	Drug	Dexamethosone	Dexamethosone	CHEMBL384467	
+2864	NCT01132807	Drug	Procarbazine Hydrochloride	Procarbazine Hydrochloride	CHEMBL1200410	
+29467	NCT00613665	Biological	helicobacter pylori vaccine	helicobacter pylori vaccine		Nothing found

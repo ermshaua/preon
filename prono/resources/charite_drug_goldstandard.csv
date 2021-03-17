@@ -1,0 +1,634 @@
+treatment,chembl_id,drug_class
+selumetinib,CHEMBL1614701,no
+selu,CHEMBL1614701,no
+dacar,CHEMBL476,no
+dacarbarzin,CHEMBL476,no
+trametinib,CHEMBL2103875,no
+tramet,CHEMBL2103875,no
+ly2875358,CHEMBL3301578,no
+ly2801653,CHEMBL3545307,no
+cabozantinib,CHEMBL2105717,no
+jq1,CHEMBL1957266,no
+mek,CHEMBL2146883,yes
+mek,CHEMBL2028663,yes
+mek,CHEMBL92,yes
+mek,CHEMBL888,yes
+mek,CHEMBL941,yes
+mek,CHEMBL1201827,yes
+mek,CHEMBL1171837,yes
+mek,CHEMBL1614701,yes
+mek,CHEMBL1336,yes
+mek,CHEMBL2103875,yes
+mek,CHEMBL100473,yes
+mek,CHEMBL1229517,yes
+nivolumab,CHEMBL2108738,no
+pembrolizumab,CHEMBL3137343,no
+ipilimumab,CHEMBL1789844,no
+epacadostat,CHEMBL3545369,no
+olaparib,CHEMBL521686,no
+talazoparib,CHEMBL3137320,no
+palbociclib,CHEMBL189963,no
+anastrozol,CHEMBL1399,no
+fulvestrant,CHEMBL1358,no
+erbb3,CHEMBL554,yes
+met,CHEMBL1230609,yes
+met,CHEMBL3334567,yes
+met,CHEMBL601719,yes
+crizotinib,CHEMBL601719,no
+immune checkpoint inh,CHEMBL3707227,yes
+immune checkpoint inh,CHEMBL3833373,yes
+immune checkpoint inh,CHEMBL3301587,yes
+immune checkpoint inh,CHEMBL1789844,yes
+immune checkpoint inh,CHEMBL3137343,yes
+immune checkpoint inh,CHEMBL2108738,yes
+ici,CHEMBL3707227,yes
+ici,CHEMBL3833373,yes
+ici,CHEMBL3301587,yes
+ici,CHEMBL1789844,yes
+ici,CHEMBL3137343,yes
+ici,CHEMBL2108738,yes
+rucaparib,CHEMBL1173055,no
+vorinostat,CHEMBL98,no
+valproat,CHEMBL109,no
+rg 7112,CHEMBL2386346,no
+prexasertib,CHEMBL3544911,no
+binimetinib,CHEMBL3187723,no
+ribociclib,CHEMBL3545110,no
+encorafenib,CHEMBL3301612,no
+vermurafenib,CHEMBL1229517,no
+dabrafenib,CHEMBL2028663,no
+vemurafenib,CHEMBL1229517,no
+panitumumab,CHEMBL1201827,no
+pertuzumab,CHEMBL2007641,no
+canertinib,CHEMBL31965,no
+everolimus,CHEMBL1908360,no
+tazemetostat,CHEMBL3414621,no
+indoximod,CHEMBL571209,no
+pembro,CHEMBL3137343,no
+ribocic,CHEMBL3545110,no
+mtor inhibitors,CHEMBL1201583,yes
+mtor inhibitors,CHEMBL1201577,yes
+mtor inhibitors,CHEMBL553,yes
+mtor inhibitors,CHEMBL1908360,yes
+mtor inhibitors,CHEMBL1444,yes
+mtor inhibitors,CHEMBL1680,yes
+mtor inhibitors,CHEMBL477772,yes
+mtor inhibitors,CHEMBL413,yes
+mtor inhibitors,CHEMBL1336,yes
+mtor inhibitors,CHEMBL1201182,yes
+mtor inhibitors,CHEMBL1201585,yes
+cetuximab,CHEMBL1201577,no
+bevacizumab,CHEMBL1201583,no
+gefitinib,CHEMBL939,no
+erlotinib,CHEMBL553,no
+regorafenib,CHEMBL1946170,no
+ro4987655,CHEMBL1614766,no
+refametinib,CHEMBL1236682,no
+cetux,CHEMBL1201577,no
+doce,CHEMBL92,no
+foretinib,CHEMBL1230609,no
+mln1208,CHEMBL3545097,no
+azd2014,CHEMBL2336325,no
+azd8055,CHEMBL1801204,no
+dasatinib,CHEMBL1421,no
+gsk126,CHEMBL3287735,no
+veliparib,CHEMBL506871,no
+imatinib,CHEMBL941,no
+nilotinib,CHEMBL255863,no
+enasidenib,CHEMBL3989908,no
+patritumab,CHEMBL2109406,no
+lapatinib,CHEMBL554,no
+leuprorelin,CHEMBL1201199,no
+bicalutamid,CHEMBL409,no
+platinumbased ctx,CHEMBL11359,yes
+platinumbased ctx,CHEMBL1351,yes
+platinumbased ctx,CHEMBL414804,yes
+alisertib,CHEMBL483158,no
+platinum,CHEMBL11359,yes
+platinum,CHEMBL1351,yes
+platinum,CHEMBL414804,yes
+kit inhibition,CHEMBL2103875,yes
+kit inhibition,CHEMBL941,yes
+bet inhibition,CHEMBL1957266,yes
+bet inhibition,CHEMBL2017291,yes
+bet inhibition,CHEMBL1232461,yes
+bet inhibition,CHEMBL3581647,yes
+bet inhibition,CHEMBL3770724,yes
+bet inhibition,CHEMBL98350,yes
+mtor,CHEMBL1201583,yes
+mtor,CHEMBL1201577,yes
+mtor,CHEMBL553,yes
+mtor,CHEMBL1908360,yes
+mtor,CHEMBL1444,yes
+mtor,CHEMBL1680,yes
+mtor,CHEMBL477772,yes
+mtor,CHEMBL413,yes
+mtor,CHEMBL1336,yes
+mtor,CHEMBL1201182,yes
+mtor,CHEMBL1201585,yes
+rapamycin,CHEMBL413,no
+sorafenib,CHEMBL1336,no
+ly2606368,CHEMBL3544911,no
+braf,CHEMBL2396661,yes
+braf,CHEMBL1201577,yes
+braf,CHEMBL2146883,yes
+braf,CHEMBL601719,yes
+braf,CHEMBL2028663,yes
+braf,CHEMBL481,yes
+braf,CHEMBL1201827,yes
+braf,CHEMBL1230020,yes
+braf,CHEMBL2103875,yes
+braf,CHEMBL1229517,yes
+temozolomid,CHEMBL810,no
+alk inhibitors,CHEMBL601719,yes
+alk inhibitors,CHEMBL1738797,yes
+alk inhibitors,CHEMBL2403108,yes
+alk inhibitors,CHEMBL3286830,yes
+alk inhibitors,CHEMBL487253,yes
+alk inhibitors,CHEMBL491473,yes
+alk inhibitors,CHEMBL1229517,yes
+alk inhibitors,CHEMBL1201585,yes
+entrectinib,CHEMBL1983268,no
+trastuzumab,CHEMBL1201585,no
+neratinib,CHEMBL180022,no
+afatinib,CHEMBL1173655,no
+anti egfr,CHEMBL3545308,yes
+anti egfr,CHEMBL3786343,yes
+anti egfr,CHEMBL3353410,yes
+extreme,CHEMBL11359,yes
+extreme,CHEMBL185,yes
+extreme,CHEMBL1201577,yes
+met inhibition,CHEMBL1230609,yes
+met inhibition,CHEMBL3334567,yes
+met inhibition,CHEMBL601719,yes
+mek inhibition,CHEMBL2146883,yes
+mek inhibition,CHEMBL2028663,yes
+mek inhibition,CHEMBL92,yes
+mek inhibition,CHEMBL888,yes
+mek inhibition,CHEMBL941,yes
+mek inhibition,CHEMBL1201827,yes
+mek inhibition,CHEMBL1171837,yes
+mek inhibition,CHEMBL1614701,yes
+mek inhibition,CHEMBL1336,yes
+mek inhibition,CHEMBL2103875,yes
+mek inhibition,CHEMBL100473,yes
+mek inhibition,CHEMBL1229517,yes
+raf,CHEMBL2396661,yes
+raf,CHEMBL1201577,yes
+raf,CHEMBL2146883,yes
+raf,CHEMBL601719,yes
+raf,CHEMBL2028663,yes
+raf,CHEMBL481,yes
+raf,CHEMBL1201827,yes
+raf,CHEMBL1230020,yes
+raf,CHEMBL2103875,yes
+raf,CHEMBL1229517,yes
+egfr,CHEMBL3545308,yes
+egfr,CHEMBL3786343,yes
+egfr,CHEMBL3353410,yes
+docetaxel,CHEMBL92,no
+rg7112,CHEMBL2386346,no
+carboplatin,CHEMBL1351,no
+paclitaxel,CHEMBL428647,no
+pi3k,CHEMBL2396661,yes
+pi3k,CHEMBL2028663,yes
+pi3k,CHEMBL1201827,yes
+mtor targeting everolimus,CHEMBL1908360,no
+trastuzumabemtansine,CHEMBL1743082,no
+rct,CHEMBL11359,no
+cisplatin chemo,CHEMBL11359,no
+plat,CHEMBL11359,yes
+plat,CHEMBL1351,yes
+plat,CHEMBL414804,yes
+av203,CHEMBL2109401,no
+pi3k inhibitor,CHEMBL2396661,yes
+pi3k inhibitor,CHEMBL2028663,yes
+pi3k inhibitor,CHEMBL1201827,yes
+fgfr inhibitors,CHEMBL522892,yes
+sgx523,CHEMBL1236107,no
+linsitinib,CHEMBL1091644,no
+ku0058948,CHEMBL380648,no
+dovitinib,CHEMBL522892,no
+pp242,CHEMBL1241674,no
+sirolimus,CHEMBL413,no
+relatlimab,CHEMBL3990044,no
+cyclopamine,CHEMBL254129,no
+other smo inhibitors,CHEMBL473417,yes
+other smo inhibitors,CHEMBL2105737,yes
+other smo inhibitors,CHEMBL22587,yes
+hydroxyurea,CHEMBL467,no
+pexidartinib,CHEMBL3813873,no
+sunitinib,CHEMBL535,no
+bez235,CHEMBL1879463,no
+atezolizumab,CHEMBL3707227,no
+cobimetinib,CHEMBL2146883,no
+5fu,CHEMBL185,no
+egfr therapy,CHEMBL3545308,yes
+egfr therapy,CHEMBL3786343,yes
+egfr therapy,CHEMBL3353410,yes
+jw55,CHEMBL3753077,no
+mtor inhibitor,CHEMBL1201583,yes
+mtor inhibitor,CHEMBL1201577,yes
+mtor inhibitor,CHEMBL553,yes
+mtor inhibitor,CHEMBL1908360,yes
+mtor inhibitor,CHEMBL1444,yes
+mtor inhibitor,CHEMBL1680,yes
+mtor inhibitor,CHEMBL477772,yes
+mtor inhibitor,CHEMBL413,yes
+mtor inhibitor,CHEMBL1336,yes
+mtor inhibitor,CHEMBL1201182,yes
+mtor inhibitor,CHEMBL1201585,yes
+ros1 inhibitor,CHEMBL3286830,yes
+azd1775,CHEMBL1976040,no
+emactuzumab,CHEMBL3545370,no
+pemetrexed,CHEMBL225072,no
+pd0325901,CHEMBL507361,no
+pi103,CHEMBL573339,no
+pd901,CHEMBL507361,no
+tgx221,CHEMBL1972466,no
+vandetanib,CHEMBL24828,no
+ketoconazole,CHEMBL157101,no
+orteronel,CHEMBL1921976,no
+enzalutamide,CHEMBL1082407,no
+tamoxifen,CHEMBL83,no
+letrozole,CHEMBL1444,no
+rovalpituzumab tesirine,CHEMBL3990011,no
+bgj398,CHEMBL1852688,no
+ipatasertib,CHEMBL2177390,no
+taselisib,CHEMBL2387080,no
+pictilisib,CHEMBL521851,no
+px866,CHEMBL411907,no
+sar260301,CHEMBL3545008,no
+temsirolimus,CHEMBL1201182,no
+antiegfr: 2b,CHEMBL3545308,yes
+antiegfr: 2b,CHEMBL3786343,yes
+antiegfr: 2b,CHEMBL3353410,yes
+parp inhibition,CHEMBL521686,yes
+parp inhibition,CHEMBL1173055,yes
+parp inhibition,CHEMBL506871,yes
+parp inhibition,CHEMBL11359,yes
+mtor inhibition,CHEMBL1201583,yes
+mtor inhibition,CHEMBL1201577,yes
+mtor inhibition,CHEMBL553,yes
+mtor inhibition,CHEMBL1908360,yes
+mtor inhibition,CHEMBL1444,yes
+mtor inhibition,CHEMBL1680,yes
+mtor inhibition,CHEMBL477772,yes
+mtor inhibition,CHEMBL413,yes
+mtor inhibition,CHEMBL1336,yes
+mtor inhibition,CHEMBL1201182,yes
+mtor inhibition,CHEMBL1201585,yes
+parp,CHEMBL521686,yes
+parp,CHEMBL1173055,yes
+parp,CHEMBL506871,yes
+parp,CHEMBL11359,yes
+mtor pathway targeting,CHEMBL1201583,yes
+mtor pathway targeting,CHEMBL1201577,yes
+mtor pathway targeting,CHEMBL553,yes
+mtor pathway targeting,CHEMBL1908360,yes
+mtor pathway targeting,CHEMBL1444,yes
+mtor pathway targeting,CHEMBL1680,yes
+mtor pathway targeting,CHEMBL477772,yes
+mtor pathway targeting,CHEMBL413,yes
+mtor pathway targeting,CHEMBL1336,yes
+mtor pathway targeting,CHEMBL1201182,yes
+mtor pathway targeting,CHEMBL1201585,yes
+axitinib,CHEMBL1289926,no
+mln0128,CHEMBL3545097,no
+cc223,CHEMBL3545151,no
+ink128,CHEMBL3545097,no
+vistusertib,CHEMBL2336325,no
+ceutximab,CHEMBL1201577,no
+egfr tki,CHEMBL939,yes
+geftinib,CHEMBL939,no
+sonidegib,CHEMBL2105737,no
+braf inhibitors,CHEMBL2396661,yes
+braf inhibitors,CHEMBL1201577,yes
+braf inhibitors,CHEMBL2146883,yes
+braf inhibitors,CHEMBL601719,yes
+braf inhibitors,CHEMBL2028663,yes
+braf inhibitors,CHEMBL481,yes
+braf inhibitors,CHEMBL1201827,yes
+braf inhibitors,CHEMBL1230020,yes
+braf inhibitors,CHEMBL2103875,yes
+braf inhibitors,CHEMBL1229517,yes
+mek inhibitors,CHEMBL2146883,yes
+mek inhibitors,CHEMBL2028663,yes
+mek inhibitors,CHEMBL92,yes
+mek inhibitors,CHEMBL888,yes
+mek inhibitors,CHEMBL941,yes
+mek inhibitors,CHEMBL1201827,yes
+mek inhibitors,CHEMBL1171837,yes
+mek inhibitors,CHEMBL1614701,yes
+mek inhibitors,CHEMBL1336,yes
+mek inhibitors,CHEMBL2103875,yes
+mek inhibitors,CHEMBL100473,yes
+mek inhibitors,CHEMBL1229517,yes
+tozasertib,CHEMBL572878,no
+mek inhibitor,CHEMBL2146883,yes
+mek inhibitor,CHEMBL2028663,yes
+mek inhibitor,CHEMBL92,yes
+mek inhibitor,CHEMBL888,yes
+mek inhibitor,CHEMBL941,yes
+mek inhibitor,CHEMBL1201827,yes
+mek inhibitor,CHEMBL1171837,yes
+mek inhibitor,CHEMBL1614701,yes
+mek inhibitor,CHEMBL1336,yes
+mek inhibitor,CHEMBL2103875,yes
+mek inhibitor,CHEMBL100473,yes
+mek inhibitor,CHEMBL1229517,yes
+6 inhibitor,CHEMBL189963,yes
+6 inhibitor,CHEMBL3545110,yes
+6 inhibitor,CHEMBL3301610,yes
+onartuzumab,CHEMBL1743051,no
+vismodegib,CHEMBL473417,no
+ici possible hyperprogress,CHEMBL3707227,yes
+ici possible hyperprogress,CHEMBL3833373,yes
+ici possible hyperprogress,CHEMBL3301587,yes
+ici possible hyperprogress,CHEMBL1789844,yes
+ici possible hyperprogress,CHEMBL3137343,yes
+ici possible hyperprogress,CHEMBL2108738,yes
+platinum based cx,CHEMBL11359,yes
+platinum based cx,CHEMBL1351,yes
+platinum based cx,CHEMBL414804,yes
+amg 900,CHEMBL2140408,no
+mln8237,CHEMBL483158,no
+abemaciclib,CHEMBL3301610,no
+tae684,CHEMBL509032,no
+ag14361,CHEMBL65892,no
+ola,CHEMBL521686,no
+ruca,CHEMBL1173055,no
+veli,CHEMBL506871,no
+atr inhibition,CHEMBL3545178,yes
+eap chemo,CHEMBL44657,yes
+eap chemo,CHEMBL53463,yes
+eap chemo,CHEMBL11359,yes
+gemcitabine,CHEMBL888,no
+oxaliplatin,CHEMBL414804,no
+cediranib,CHEMBL491473,no
+merestinib,CHEMBL3545307,no
+riluzol,CHEMBL744,no
+otx015,CHEMBL3581647,no
+tki258.,CHEMBL522892,no
+mitomycin c,CHEMBL105,no
+cisplatin,CHEMBL11359,no
+chlorambucil,CHEMBL515,no
+melphalan,CHEMBL852,no
+ponabinostat,CHEMBL483254,no
+ponatinib,CHEMBL1171837,no
+immune therapy,CHEMBL3707227,yes
+immune therapy,CHEMBL3833373,yes
+immune therapy,CHEMBL3301587,yes
+immune therapy,CHEMBL1789844,yes
+immune therapy,CHEMBL3137343,yes
+immune therapy,CHEMBL2108738,yes
+nivo,CHEMBL2108738,no
+jnj42756493,CHEMBL3545376,no
+wz4002,CHEMBL1229592,no
+bicalutamide,CHEMBL409,no
+nintedanib,CHEMBL502835,no
+venetoclax,CHEMBL3137309,no
+pazopanib,CHEMBL477772,no
+mtor targeting analysis,CHEMBL1201583,yes
+mtor targeting analysis,CHEMBL1201577,yes
+mtor targeting analysis,CHEMBL553,yes
+mtor targeting analysis,CHEMBL1908360,yes
+mtor targeting analysis,CHEMBL1444,yes
+mtor targeting analysis,CHEMBL1680,yes
+mtor targeting analysis,CHEMBL477772,yes
+mtor targeting analysis,CHEMBL413,yes
+mtor targeting analysis,CHEMBL1336,yes
+mtor targeting analysis,CHEMBL1201182,yes
+mtor targeting analysis,CHEMBL1201585,yes
+buparlisib,CHEMBL2017974,no
+mk2206,CHEMBL1079175,no
+anastrozole,CHEMBL1399,no
+alpelisib,CHEMBL2396661,no
+dactolisib,CHEMBL1879463,no
+piralalisib,CHEMBL3360203,no
+ch5132799,CHEMBL1684984,no
+alemtuzumab,CHEMBL1201587,no
+mek1,CHEMBL2146883,yes
+mek1,CHEMBL2028663,yes
+mek1,CHEMBL92,yes
+mek1,CHEMBL888,yes
+mek1,CHEMBL941,yes
+mek1,CHEMBL1201827,yes
+mek1,CHEMBL1171837,yes
+mek1,CHEMBL1614701,yes
+mek1,CHEMBL1336,yes
+mek1,CHEMBL2103875,yes
+mek1,CHEMBL100473,yes
+mek1,CHEMBL1229517,yes
+azd5363,CHEMBL2178577,no
+rituximab,CHEMBL1201576,no
+navitoclax,CHEMBL443684,no
+milatuzumab,CHEMBL1743040,no
+and pi103,CHEMBL573339,no
+ceritinib,CHEMBL2403108,no
+gsk2141795,CHEMBL3137336,no
+bay 1125976,CHEMBL3545049,no
+valproic acid,CHEMBL109,no
+lbh589,CHEMBL483254,no
+apitolisib,CHEMBL1922094,no
+azd4547,CHEMBL3184679,no
+gdc0941,CHEMBL521851,no
+palbocilib,CHEMBL189963,no
+mtor1,CHEMBL1201583,yes
+mtor1,CHEMBL1201577,yes
+mtor1,CHEMBL553,yes
+mtor1,CHEMBL1908360,yes
+mtor1,CHEMBL1444,yes
+mtor1,CHEMBL1680,yes
+mtor1,CHEMBL477772,yes
+mtor1,CHEMBL413,yes
+mtor1,CHEMBL1336,yes
+mtor1,CHEMBL1201182,yes
+mtor1,CHEMBL1201585,yes
+vpa,CHEMBL109,no
+vegfr,CHEMBL1289926,yes
+vegfr,CHEMBL1908360,yes
+vegfr,CHEMBL1201583,yes
+vegfr,CHEMBL477772,yes
+vegfr,CHEMBL1336,yes
+vegfr,CHEMBL535,yes
+sonepcizumab,CHEMBL2109570,no
+dinaciclib,CHEMBL2103840,no
+verteprofin,CHEMBL2218885,no
+verteporfin,CHEMBL2218885,no
+larotrectinib,CHEMBL3889654,no
+paclitacel,CHEMBL428647,no
+sns032,CHEMBL296468,no
+pha533533,CHEMBL191144,no
+vegfr inhibition,CHEMBL1289926,yes
+vegfr inhibition,CHEMBL1908360,yes
+vegfr inhibition,CHEMBL1201583,yes
+vegfr inhibition,CHEMBL477772,yes
+vegfr inhibition,CHEMBL1336,yes
+vegfr inhibition,CHEMBL535,yes
+parp inhibitors,CHEMBL521686,yes
+parp inhibitors,CHEMBL1173055,yes
+parp inhibitors,CHEMBL506871,yes
+parp inhibitors,CHEMBL11359,yes
+platin,CHEMBL11359,yes
+platin,CHEMBL1351,yes
+platin,CHEMBL414804,yes
+tki258,CHEMBL522892,no
+su5402,CHEMBL89363,no
+immunecheckpoint inhibition,CHEMBL3707227,yes
+immunecheckpoint inhibition,CHEMBL3833373,yes
+immunecheckpoint inhibition,CHEMBL3301587,yes
+immunecheckpoint inhibition,CHEMBL1789844,yes
+immunecheckpoint inhibition,CHEMBL3137343,yes
+immunecheckpoint inhibition,CHEMBL2108738,yes
+gsk2141795b,CHEMBL3137336,no
+niraparib,CHEMBL1094636,no
+platinumbased cx,CHEMBL11359,yes
+platinumbased cx,CHEMBL1351,yes
+platinumbased cx,CHEMBL414804,yes
+ag221,CHEMBL3989908,no
+decitabine,CHEMBL1201129,no
+osimertinib,CHEMBL3353410,no
+phenformin,CHEMBL170988,no
+doxorubicin,CHEMBL53463,no
+etoposid,CHEMBL44657,no
+canersen,CHEMBL2108280,no
+azd8186,CHEMBL3545424,no
+mekinhibition,CHEMBL2146883,yes
+mekinhibition,CHEMBL2028663,yes
+mekinhibition,CHEMBL92,yes
+mekinhibition,CHEMBL888,yes
+mekinhibition,CHEMBL941,yes
+mekinhibition,CHEMBL1201827,yes
+mekinhibition,CHEMBL1171837,yes
+mekinhibition,CHEMBL1614701,yes
+mekinhibition,CHEMBL1336,yes
+mekinhibition,CHEMBL2103875,yes
+mekinhibition,CHEMBL100473,yes
+mekinhibition,CHEMBL1229517,yes
+erb3,CHEMBL601719,yes
+erb3,CHEMBL554,yes
+selumet,CHEMBL1614701,no
+lapatinib in,CHEMBL554,no
+trametenib,CHEMBL2103875,no
+doxo,CHEMBL53463,no
+adj platinum,CHEMBL11359,yes
+adj platinum,CHEMBL1351,yes
+adj platinum,CHEMBL414804,yes
+fgfr inhibition,CHEMBL522892,yes
+saha,CHEMBL98,no
+bay869766,CHEMBL1236682,no
+spliceostatin a,CHEMBL1221944,no
+su11274,CHEMBL261641,no
+pi3k pathway targeting,CHEMBL2396661,yes
+pi3k pathway targeting,CHEMBL2028663,yes
+pi3k pathway targeting,CHEMBL1201827,yes
+immune checkpoint inhibition,CHEMBL3707227,yes
+immune checkpoint inhibition,CHEMBL3833373,yes
+immune checkpoint inhibition,CHEMBL3301587,yes
+immune checkpoint inhibition,CHEMBL1789844,yes
+immune checkpoint inhibition,CHEMBL3137343,yes
+immune checkpoint inhibition,CHEMBL2108738,yes
+aeb071,CHEMBL565612,no
+mek162,CHEMBL3187723,no
+medi4736,CHEMBL3301587,no
+mek inhib,CHEMBL2146883,yes
+mek inhib,CHEMBL2028663,yes
+mek inhib,CHEMBL92,yes
+mek inhib,CHEMBL888,yes
+mek inhib,CHEMBL941,yes
+mek inhib,CHEMBL1201827,yes
+mek inhib,CHEMBL1171837,yes
+mek inhib,CHEMBL1614701,yes
+mek inhib,CHEMBL1336,yes
+mek inhib,CHEMBL2103875,yes
+mek inhib,CHEMBL100473,yes
+mek inhib,CHEMBL1229517,yes
+temsirol,CHEMBL1201182,no
+dacomitinib,CHEMBL2110732,no
+carbo,CHEMBL1351,no
+mk 2206,CHEMBL1079175,no
+gsk 690693,CHEMBL494089,no
+sitravatinib,CHEMBL3989926,no
+tivantinib,CHEMBL2103882,no
+rilotumumab,CHEMBL1743063,no
+parp inhibitor,CHEMBL521686,yes
+parp inhibitor,CHEMBL1173055,yes
+parp inhibitor,CHEMBL506871,yes
+parp inhibitor,CHEMBL11359,yes
+ibrd9,CHEMBL3769507,no
+immunotherapy,CHEMBL3707227,yes
+immunotherapy,CHEMBL3833373,yes
+immunotherapy,CHEMBL3301587,yes
+immunotherapy,CHEMBL1789844,yes
+immunotherapy,CHEMBL3137343,yes
+immunotherapy,CHEMBL2108738,yes
+capecitabin,CHEMBL1773,no
+floxouridin,CHEMBL917,no
+tegafur,CHEMBL20883,no
+pi3k targeting,CHEMBL2396661,yes
+pi3k targeting,CHEMBL2028663,yes
+pi3k targeting,CHEMBL1201827,yes
+antipd1 treatment,CHEMBL3707227,yes
+antipd1 treatment,CHEMBL3833373,yes
+antipd1 treatment,CHEMBL3301587,yes
+antipd1 treatment,CHEMBL1789844,yes
+antipd1 treatment,CHEMBL3137343,yes
+antipd1 treatment,CHEMBL2108738,yes
+nvpbyl719,CHEMBL2396661,no
+ku0060648,CHEMBL1086377,no
+ly294002,CHEMBL98350,no
+panobinostat,CHEMBL483254,no
+epz6438,CHEMBL3414621,no
+adotrastuzumab,CHEMBL1743082,no
+ridaforolimus,CHEMBL2103839,no
+temsirolim,CHEMBL1201182,no
+ribo,CHEMBL3545110,no
+dactilisib,CHEMBL1879463,no
+epirubicin,CHEMBL417,no
+su 5402,CHEMBL89363,no
+carfilzomib,CHEMBL451887,no
+lenalidomid,CHEMBL848,no
+dexamethasone,CHEMBL384467,no
+raf265,CHEMBL558752,no
+panitimumab,CHEMBL1201827,no
+pacli,CHEMBL428647,no
+alkinhibitor,CHEMBL601719,yes
+alkinhibitor,CHEMBL1738797,yes
+alkinhibitor,CHEMBL2403108,yes
+alkinhibitor,CHEMBL3286830,yes
+alkinhibitor,CHEMBL487253,yes
+alkinhibitor,CHEMBL491473,yes
+alkinhibitor,CHEMBL1229517,yes
+alkinhibitor,CHEMBL1201585,yes
+cyclophosphamide,CHEMBL88,no
+sf1126,CHEMBL2326966,no
+necitumumab,CHEMBL1743047,no
+nimotuzumab,CHEMBL2108359,no
+sapanisertib,CHEMBL3545097,no
+bay1163877,CHEMBL3963485,no
+cdk6 inhibition,CHEMBL3301610,yes
+demcizumab,CHEMBL2109384,no
+vegfr inhib: sunitinib,CHEMBL535,no
+egfr inhib,CHEMBL3545308,yes
+egfr inhib,CHEMBL3786343,yes
+egfr inhib,CHEMBL3353410,yes
+ae. gefitinib,CHEMBL939,no
+6 inhibitors,CHEMBL189963,yes
+6 inhibitors,CHEMBL3545110,yes
+6 inhibitors,CHEMBL3301610,yes
+tak733,CHEMBL1615025,no
+thapsigargin,CHEMBL96926,no
+miransertib,CHEMBL4297188,no
+temozolomide,CHEMBL810,no
+ag120,CHEMBL3989958,no
+5azacytidine,CHEMBL1489,no
+procarbazine,CHEMBL1321,no
+lomustine,CHEMBL514,no
+vincristine,CHEMBL90555,no
+parp inh,CHEMBL521686,yes
+parp inh,CHEMBL1173055,yes
+parp inh,CHEMBL506871,yes
+parp inh,CHEMBL11359,yes
+rovalpituzumab,CHEMBL3989991,no
+nvpbez235,CHEMBL1879463,no
