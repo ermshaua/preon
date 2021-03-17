@@ -4,7 +4,7 @@ PRONO (PRecision Oncology NOrmalization) is a fuzzy search tool for medical enti
 ## Installation
 
 You can install PRONO with PyPi:
-`python -m pip install {todo}
+`python -m pip install {todo}`
 
 ## Examples
 
