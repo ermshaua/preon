@@ -1,4 +1,4 @@
-# pronto (PRecision Oncology NOrmalization)
+# pronto (PRecision Oncology NormalizaTiOn)
 pronto is a fuzzy search tool for medical entities.
 
 ## Installation
