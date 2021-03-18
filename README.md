@@ -1,9 +1,9 @@
-# pronto (PRecision Oncology NormalizaTiOn)
-pronto is a fuzzy search tool for medical entities.
+# preon PREcision Oncology Normalization)
+preon is a fuzzy search tool for medical entities.
 
 ## Installation
 
-You can install pronto with PyPi:
+You can install preon with PyPi:
 `python -m pip install {todo}`
 
 ## Examples
@@ -11,8 +11,8 @@ You can install pronto with PyPi:
 Let's first import the normalizer and EBI drug names with CHEMBL ids.
 
 ```python3
->>> from pronto.normalization import PrecisionOncologyNormalizer
->>> from pronto.drug import load_ebi_drugs
+>>> from preon.normalization import PrecisionOncologyNormalizer
+>>> from preon.drug import load_ebi_drugs
 ```
 
 Let's fit the normalizer with the drug names and ids as its reference data.
@@ -36,11 +36,11 @@ As a result for our query, we get list of matching normalized drug names (in thi
 (['ixabepilone'], [['CHEMBL1201752']], {'match_type': 'substring'})
 ```
 
-We find the relevant drug name `['ixabepilone']` and pronto provides the meta information that the matching is based on a substring. On default, pronto only looks for 1 matching token. It can also look for n-grams by setting the `n_grams` parameter in the query method. Let's take a harder example, say "Isavuconazonium", but misspell it as "Isavuconaconium".
+We find the relevant drug name `['ixabepilone']` and preon provides the meta information that the matching is based on a substring. On default, preon only looks for 1 matching token. It can also look for n-grams by setting the `n_grams` parameter in the query method. Let's take a harder example, say "Isavuconazonium", but misspell it as "Isavuconaconium".
 
 ```python3
 >>> normalizer.query("Isavuconaconium")
 (['isavuconazonium'], [['CHEMBL1183349']], {'match_type': 'partial', 'edit_distance': 0.0667})
 ```
 
-pronto finds the correct drug "Isavuconazonium" and provides the meta information that it is a partial match with 7% distance. It returns drug names with a distance smaller than 20% on default. In order to change this parameter, set the `threshold` argument in the query method.
+preon finds the correct drug "Isavuconazonium" and provides the meta information that it is a partial match with 7% distance. It returns drug names with a distance smaller than 20% on default. In order to change this parameter, set the `threshold` argument in the query method.
