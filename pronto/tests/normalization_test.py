@@ -1,8 +1,8 @@
 import unittest
 
-from prono.normalization import PrecisionOncologyNormalizer
-from prono.drug import load_ebi_drugs, load_charite_drug_goldstandard, load_database_drug_goldstandard, load_ctg_drug_goldstandard
-from prono.tests.utils import f1_score
+from pronto.normalization import PrecisionOncologyNormalizer
+from pronto.drug import load_ebi_drugs, load_charite_drug_goldstandard, load_database_drug_goldstandard, load_ctg_drug_goldstandard
+from pronto.tests.utils import f1_score
 
 
 class DrugNormalizationTest(unittest.TestCase):

@@ -127,6 +127,5 @@ class PrecisionOncologyNormalizer:
 
         df["Correct Match"] = correct_matches
 
-        df = df[["Name", "Found Names", "Name IDs", "Found Name IDs", "Match Type", "Correct Match", "Edit Distance",
-                 "Query Time"]]
+        df = df[["Name", "Found Names", "Name IDs", "Found Name IDs", "Match Type", "Correct Match", "Edit Distance", "Query Time"]]
         return df
