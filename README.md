@@ -1,4 +1,4 @@
-# preon PREcision Oncology Normalization)
+# preon (PREcision Oncology Normalization)
 preon is a fuzzy search tool for medical entities.
 
 ## Installation
