@@ -1,0 +1,134 @@
+source;cancer type;doid
+biomarkers;Multiple myeloma;DOID:9538
+biomarkers;Medulloblastoma;DOID:0050902
+biomarkers;Mantle cell lymphoma;DOID:0050746
+docm;multiple myeloma;DOID:9538
+oncokb;Colorectal Cancer;DOID:9256
+civic;Acute Myeloid Leukemia;DOID:9119
+docm;skin melanoma;DOID:8923
+civic;Chronic Myeloid Leukemia;DOID:8552
+docm;neuroblastoma;DOID:769
+pmkb;Neuroblastoma;DOID:769
+docm;hepatocellular carcinoma;DOID:684
+docm;ovarian serous cystadenocarcinoma;DOID:5746
+civic;Histiocytic And Dendritic Cell Cancer;DOID:5621
+oncokb;Head and Neck Squamous Cell Carcinoma;DOID:5520
+oncokb;Cholangiocarcinoma;DOID:4947
+biomarkers;Gastroesophageal junction adenocarcinoma;DOID:4944
+cosmic;sebaceous_carcinoma;DOID:4840
+cosmic;myoepithelial_carcinoma;DOID:4838
+civic;Biliary Tract Cancer;DOID:4607
+pmkb;Clear Cell Renal Cell Carcinoma;DOID:4467
+civic;Renal Carcinoma;DOID:4451
+civic;Alveolar Rhabdomyosarcoma;DOID:4051
+civic;Adrenocortical Carcinoma;DOID:3948
+biomarkers;Lung adenocarcinoma;DOID:3910
+docm;lung adenocarcinoma;DOID:3910
+oncokb;Lung Squamous Cell Carcinoma;DOID:3907
+docm;gastric adenocarcinoma;DOID:3717
+biomarkers;Breast adenocarcinoma;DOID:3458
+cosmic;liposarcoma;DOID:3382
+oncokb;Liposarcoma;DOID:3382
+civic;Chondrosarcoma;DOID:3371
+oncokb;Ewing Sarcoma;DOID:3369
+pmkb;Thymic Carcinoma;DOID:3284
+docm;rhabdomyosarcoma;DOID:3247
+docm;skin squamous cell carcinoma;DOID:3151
+pmkb;Astrocytoma;DOID:3069
+docm;glioblastoma multiforme;DOID:3068
+pmkb;Adenocarcinoma;DOID:299
+docm;cervix carcinoma;DOID:2893
+biomarkers;Basal cell carcinoma;DOID:2513
+docm;ovarian cancer;DOID:2394
+pmkb;Myeloproliferative Neoplasm;DOID:2226
+pmkb;Essential Thrombocythemia;DOID:2224
+civic;Melanoma;DOID:1909
+docm;melanoma;DOID:1909
+pmkb;Squamous Cell Carcinoma;DOID:1749
+docm;breast cancer;DOID:1612
+civic;Prostate Carcinoma;DOID:10286
+cosmic;prostate cancer;DOID:10283
+pmkb;Chronic Myelomonocytic Leukemia;DOID:0080188
+docm;brain glioma;DOID:0060108
+docm;uterine corpus endometrial carcinoma;DOID:0050939
+pmkb;Myelodysplastic Syndrome;DOID:0050908
+oncokb;Inflammatory Myofibroblastic Tumor;DOID:0050905
+civic;Parietal Lobe Ependymoma;DOID:0050903
+cosmic;lymphoplasmacytic_lymphoma;DOID:0050747
+pmkb;Diffuse Large B Cell Lymphoma;DOID:0050745
+cosmic;anaplastic_large_cell_lymphoma;DOID:0050744
+oncokb;Chronic Myelogenous Leukemia;DOID:8552
+oncokb;Erdheim-Chester Disease;
+oncokb;Ewing Sarcoma of Soft Tissue;DOID:3369
+pmkb;Glioblastoma;DOID:3068
+civic;Ganglioglioma;
+pmkb;Langerhans Cell Histiocytosis;
+cosmic;paraganglioma;
+oncokb;Peritoneal Serous Carcinoma;DOID:1791
+oncokb;Anaplastic Thyroid Cancer;DOID:0080522
+oncokb;Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma;
+biomarkers;Giant cell astrocytoma;DOID:5077
+biomarkers;Male germ cell tumor;"DOID:2994,DOID:5557,DOID:5677,DOID:4743"
+biomarkers;Non-small cell lung;DOID:3908
+civic;Brain Medulloblastoma;DOID:0050902,DOID:3864,DOID:0060104,DOID:3868,DOID:3869,DOID:3873,DOID:3860,DOID:0080702,DOID:0050899,
+civic;Follicular Thyroid Carcinoma;DOID:3962
+civic;Precursor B Lymphoblastic Lymphoma/leukemia;DOID:0080630
+cosmic;acute megakaryocytic leukaemia;DOID:8761
+cosmic;essential_thrombocythaemia;DOID:2224
+ctg;Childhood Myelodysplastic Syndromes;
+ctg;Gynecologic Malignant Tumor;DOID:120
+ctg;Pediatric Lung Ultrasound;
+docm;acute T cell leukemia;DOID:5603
+docm;non-small cell lung carcinoma;DOID:3908
+docm;urinary bladder urothelial carcinoma;DOID:4006
+docm;pancreas adenocarcinoma;DOID:4074
+oncokb;Glioma;DOID:3070
+oncokb;Mastocytosis;DOID:350
+oncokb;Skin Cancer, Non-Melanoma;DOID:4284,DOID:5274,DOID:4840,DOID:3451,DOID:2687,DOID:2095
+oncokb;Thyroid Cancer;DOID:1781
+pmkb;Acute Leukemia of Unspecified Cell Type;DOID:12603
+pmkb;B Lymphoblastic Leukemia/Lymphoma;DOID:0080630
+pmkb;Urothelial Carcinoma;DOID:2671
+pmkb;Infiltrating Glioma;DOID:7656
+pmkb;Sex Cord Stromal Tumor;DOID:192
+biomarkers;ADCC;
+biomarkers;Dermatofibrosarcoma;DOID:3507
+biomarkers;FH;
+biomarkers;LIP;
+biomarkers;PLEN;
+biomarkers;RA;
+biomarkers;Renal;
+biomarkers;ST;
+biomarkers;TH;
+biomarkers;Thymic;
+cosmic;CRC;DOID:9256
+cosmic;acute_leukaemic_transformation_of_myeloproliferative_neoplasm;
+cosmic;alveolar;
+cosmic;SCC;
+cosmic;intraductal_carcinoma;
+cosmic;leukoplakia-hyperplakia-erythroplakia;
+cosmic;melanotic;
+cosmic;nasal_polyp;
+cosmic;nevus_of_Ota;
+cosmic;peritoneal_serous_surface_carcinoma;
+cosmic;pre B-ALL;DOID:0080630
+ctg;Aggressive Periodontitis, Generalized;
+ctg;Aortoiliac Obstruction;
+ctg;Decubitis Ulcer;
+ctg;Drug Evaluation;
+ctg;Feeding Intolerance in Premature Infants;
+ctg;Gastro Intestinal Bleeding;
+ctg;HIV Antiretroviral Therapy (ART) Adherence;
+ctg;Insufficiency Fractures;
+ctg;Journey II CR Total Knee System;
+ctg;Loss of Autonomy;
+ctg;Macroprolactinoma;
+ctg;Neoplasms, Esophageal;DOID:1107
+ctg;Post Herpetic Neuralgia;
+ctg;Postprandial Eructation;
+ctg;Stress-related Problems;
+ctg;Thrombotic Thrombocytopenic Purpura (TTP);
+ctg;Vasodilatory Shock;
+oncokb;All Tumors;
+pmkb;Anemia;
+pmkb;NOS;

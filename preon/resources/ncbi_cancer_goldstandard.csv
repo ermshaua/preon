@@ -1,0 +1,367 @@
+pk_disease,ncbi_name,mondo_name,disease_id,mondo_name_type
+117227,Alveolar rhabdomyosarcoma,rhabdomyosarcoma type 2,DOID:4051,exact
+117227,Alveolar rhabdomyosarcoma,"rhabdomyosarcoma, alveolar",DOID:4051,related
+42521,B-NHL,B-cell neoplasm,DOID:707,exact
+42521,B-NHL,"lymphoma, B-cell",DOID:707,related
+42521,B-cell neoplasms,B-cell neoplasm,DOID:707,exact
+42521,B-cell neoplasms,"lymphoma, B-cell",DOID:707,related
+42521,B-cell non-Hodgkins lymphomas,B-cell neoplasm,DOID:707,exact
+42521,B-cell non-Hodgkins lymphomas,"lymphoma, B-cell",DOID:707,related
+90400,BRCA-linked and sporadic ovarian cancer,ovary cancer,DOID:2394,exact
+90400,BRCA-linked and sporadic ovarian cancer,primary ovarian cancer,DOID:2394,related
+90400,BRCA-linked and sporadic ovarian cancer,tumor of the ovary,DOID:2394,broad
+77598,Burkitts lymphoma,Burkitt lymphoma; BL,DOID:8584,related
+77598,Burkitts lymphoma,"small non-cleaved cell lymphoma, Burkitt's type",DOID:8584,exact
+230230,Endocrine neoplasms,"endocrine cancer, NOS",DOID:170,related
+230230,Endocrine neoplasms,neoplasm of endocrine system,DOID:170,exact
+157648,Ewing family of tumors,peripheral primitive neuroectodermal tumor,DOID:3369,exact
+157648,Ewing family of tumors,"sarcoma, Ewing's",DOID:3369,related
+157648,Ewing sarcoma,peripheral primitive neuroectodermal tumor,DOID:3369,exact
+157648,Ewing sarcoma,"sarcoma, Ewing's",DOID:3369,related
+157648,Ewing tumors,peripheral primitive neuroectodermal tumor,DOID:3369,exact
+157648,Ewing tumors,"sarcoma, Ewing's",DOID:3369,related
+157648,Ewings sarcoma,peripheral primitive neuroectodermal tumor,DOID:3369,exact
+157648,Ewings sarcoma,"sarcoma, Ewing's",DOID:3369,related
+53627,Familial Melanoma,"melanoma, malignant",DOID:1909,exact
+59435,Familial male breast cancer,"breast cancer, male",DOID:1614,related
+59435,Familial male breast cancer,neoplasm of male breast,DOID:1614,exact
+212831,Hepatoblastoma,pediatric hepatoblastoma,DOID:687,exact
+50905,Hodgkin lymphoma,Hodgkins lymphoma,DOID:8567,exact
+50905,Hodgkin lymphoma,"lymphoma, Hodgkin's",DOID:8567,related
+50905,Hodgkin lymphoma,stage II subdiaphragmatic Hodgkin lymphoma,DOID:8567,narrow
+50905,Hodgkins disease,Hodgkins lymphoma,DOID:8567,exact
+50905,Hodgkins disease,"lymphoma, Hodgkin's",DOID:8567,related
+50905,Hodgkins disease,stage II subdiaphragmatic Hodgkin lymphoma,DOID:8567,narrow
+22681,JT,malignant neoplasm of jaw skeleton,DOID:1862,exact
+22681,JT,neoplasm of jaw,DOID:1862,broad
+52711,Kaposi sarcoma,Kaposi's sarcoma of soft tissues,DOID:8632,exact
+52711,Kaposi sarcoma,non AIDS related Kaposi sarcoma,DOID:8632,related
+52711,Kaposi sarcoma,soft tissue Kaposi's sarcoma,DOID:8632,narrow
+90400,Ovarian Cancer,ovary cancer,DOID:2394,exact
+90400,Ovarian Cancer,primary ovarian cancer,DOID:2394,related
+90400,Ovarian Cancer,tumor of the ovary,DOID:2394,broad
+90400,Ovarian cancer,ovary cancer,DOID:2394,exact
+90400,Ovarian cancer,primary ovarian cancer,DOID:2394,related
+90400,Ovarian cancer,tumor of the ovary,DOID:2394,broad
+117227,Pediatric alveolar rhabdomyosarcoma,rhabdomyosarcoma type 2,DOID:4051,exact
+117227,Pediatric alveolar rhabdomyosarcoma,"rhabdomyosarcoma, alveolar",DOID:4051,related
+92386,Prostate Cancer,hereditary prostate cancer,DOID:10283,narrow
+92386,Prostate Cancer,prostatic cancer,DOID:10283,exact
+92386,Prostate Cancer,tumor of the prostate,DOID:10283,broad
+92386,Prostate cancer,hereditary prostate cancer,DOID:10283,narrow
+92386,Prostate cancer,prostatic cancer,DOID:10283,exact
+92386,Prostate cancer,tumor of the prostate,DOID:10283,broad
+93146,RB tumors,"retinoblastoma, malignant",DOID:768,exact
+93146,RB tumors,retinoblastoma; RB1,DOID:768,related
+53275,RCC,renal cell adenocarcinoma,DOID:4450,related
+53275,RCC,renal cell carcinoma,DOID:4450,exact
+53275,RCC cancer,renal cell adenocarcinoma,DOID:4450,related
+53275,RCC cancer,renal cell carcinoma,DOID:4450,exact
+53275,Renal cell carcinomas,renal cell adenocarcinoma,DOID:4450,related
+53275,Renal cell carcinomas,renal cell carcinoma,DOID:4450,exact
+93146,Retinoblastoma,"retinoblastoma, malignant",DOID:768,exact
+93146,Retinoblastoma,retinoblastoma; RB1,DOID:768,related
+92386,Sporadic prostate carcinoma,hereditary prostate cancer,DOID:10283,narrow
+92386,Sporadic prostate carcinoma,prostatic cancer,DOID:10283,exact
+92386,Sporadic prostate carcinoma,tumor of the prostate,DOID:10283,broad
+53275,Sporadic renal cell carcinomas,renal cell adenocarcinoma,DOID:4450,related
+53275,Sporadic renal cell carcinomas,renal cell carcinoma,DOID:4450,exact
+52826,acute leukemia,"leukemia, NOS",DOID:1240,related
+52826,acute leukemia,"leukemias, general",DOID:1240,exact
+214192,acute myeloid leukemia,"leukemia, acute myeloid; AML",DOID:9119,related
+214192,acute myeloid leukemia,"myeloid leukemia, acute",DOID:9119,exact
+92386,advanced prostate cancer,hereditary prostate cancer,DOID:10283,narrow
+92386,advanced prostate cancer,prostatic cancer,DOID:10283,exact
+92386,advanced prostate cancer,tumor of the prostate,DOID:10283,broad
+92386,advanced prostate cancers,hereditary prostate cancer,DOID:10283,narrow
+92386,advanced prostate cancers,prostatic cancer,DOID:10283,exact
+92386,advanced prostate cancers,tumor of the prostate,DOID:10283,broad
+117227,alveolar rhabdomyosarcoma,rhabdomyosarcoma type 2,DOID:4051,exact
+117227,alveolar rhabdomyosarcoma,"rhabdomyosarcoma, alveolar",DOID:4051,related
+93146,bilateral and unilateral retinoblastoma,"retinoblastoma, malignant",DOID:768,exact
+93146,bilateral and unilateral retinoblastoma,retinoblastoma; RB1,DOID:768,related
+93146,bilateral retinoblastoma,"retinoblastoma, malignant",DOID:768,exact
+93146,bilateral retinoblastoma,retinoblastoma; RB1,DOID:768,related
+22636,bone and soft tissue tumors,"bone cancer, NOS",DOID:184,related
+22636,bone and soft tissue tumors,skeletal element cancer,DOID:184,exact
+18113,"brain, breast, and prostate cancer",malignant tumor of adult brain,DOID:1319,narrow
+18113,"brain, breast, and prostate cancer",primary brain tumor,DOID:1319,related
+18113,"brain, breast, and prostate cancer",primary malignant neoplasm of brain,DOID:1319,exact
+18113,"brain, breast, and prostate cancer",tumor of the brain,DOID:1319,broad
+92386,"brain, breast, and prostate cancer",hereditary prostate cancer,DOID:10283,narrow
+92386,"brain, breast, and prostate cancer",prostatic cancer,DOID:10283,exact
+92386,"brain, breast, and prostate cancer",tumor of the prostate,DOID:10283,broad
+90400,breast and 79 ovarian cancer,ovary cancer,DOID:2394,exact
+90400,breast and 79 ovarian cancer,primary ovarian cancer,DOID:2394,related
+90400,breast and 79 ovarian cancer,tumor of the ovary,DOID:2394,broad
+90400,breast and ovarian cancer,ovary cancer,DOID:2394,exact
+90400,breast and ovarian cancer,primary ovarian cancer,DOID:2394,related
+90400,breast and ovarian cancer,tumor of the ovary,DOID:2394,broad
+90400,breast and ovarian cancers,ovary cancer,DOID:2394,exact
+90400,breast and ovarian cancers,primary ovarian cancer,DOID:2394,related
+90400,breast and ovarian cancers,tumor of the ovary,DOID:2394,broad
+90400,breast and ovarian carcinomas,ovary cancer,DOID:2394,exact
+90400,breast and ovarian carcinomas,primary ovarian cancer,DOID:2394,related
+90400,breast and ovarian carcinomas,tumor of the ovary,DOID:2394,broad
+90400,breast and ovarian tumors,ovary cancer,DOID:2394,exact
+90400,breast and ovarian tumors,primary ovarian cancer,DOID:2394,related
+90400,breast and ovarian tumors,tumor of the ovary,DOID:2394,broad
+92386,breast and prostate cancer,hereditary prostate cancer,DOID:10283,narrow
+92386,breast and prostate cancer,prostatic cancer,DOID:10283,exact
+92386,breast and prostate cancer,tumor of the prostate,DOID:10283,broad
+90400,breast and/or ovarian cancer,ovary cancer,DOID:2394,exact
+90400,breast and/or ovarian cancer,primary ovarian cancer,DOID:2394,related
+90400,breast and/or ovarian cancer,tumor of the ovary,DOID:2394,broad
+90400,breast or ovarian cancer,ovary cancer,DOID:2394,exact
+90400,breast or ovarian cancer,primary ovarian cancer,DOID:2394,related
+90400,breast or ovarian cancer,tumor of the ovary,DOID:2394,broad
+90400,breast to ovarian cancer,ovary cancer,DOID:2394,exact
+90400,breast to ovarian cancer,primary ovarian cancer,DOID:2394,related
+90400,breast to ovarian cancer,tumor of the ovary,DOID:2394,broad
+90400,"breast, ovarian, or other cancers",ovary cancer,DOID:2394,exact
+90400,"breast, ovarian, or other cancers",primary ovarian cancer,DOID:2394,related
+90400,"breast, ovarian, or other cancers",tumor of the ovary,DOID:2394,broad
+90400,cancer of the breast and ovaries,ovary cancer,DOID:2394,exact
+90400,cancer of the breast and ovaries,primary ovarian cancer,DOID:2394,related
+90400,cancer of the breast and ovaries,tumor of the ovary,DOID:2394,broad
+51640,carcinoma,"carcinoma, NOS",DOID:305,related
+51640,carcinoma,malignant epithelioma,DOID:305,exact
+31284,carcinosarcoma,"mixed tumor, Mullerian",DOID:4236,related
+31284,carcinosarcoma,mullerian mixed tumor (morphologic abnormality),DOID:4236,exact
+52892,centrocytic lymphoma,"lymphoma, NOS",DOID:0060058,related
+52892,centrocytic lymphoma,malignant lymphoma,DOID:0060058,exact
+52892,centrocytic lymphomas,"lymphoma, NOS",DOID:0060058,related
+52892,centrocytic lymphomas,malignant lymphoma,DOID:0060058,exact
+50803,chronic lymphocytic leukemia,"leukemia, lymphocytic, chronic",DOID:1040,related
+50803,chronic lymphocytic leukemia,small lymphocytic lymphoma,DOID:1040,exact
+90400,"colorectal, endometrial, and ovarian cancers",ovary cancer,DOID:2394,exact
+90400,"colorectal, endometrial, and ovarian cancers",primary ovarian cancer,DOID:2394,related
+90400,"colorectal, endometrial, and ovarian cancers",tumor of the ovary,DOID:2394,broad
+93146,ectopic intracranial retinoblastoma,"retinoblastoma, malignant",DOID:768,exact
+93146,ectopic intracranial retinoblastoma,retinoblastoma; RB1,DOID:768,related
+34924,endolymphatic sac tumors,tumor of endometrial stroma,DOID:5166,exact
+53627,familial melanoma,"melanoma, malignant",DOID:1909,exact
+93146,familial or sporadic bilateral retinoblastoma,"retinoblastoma, malignant",DOID:768,exact
+93146,familial or sporadic bilateral retinoblastoma,retinoblastoma; RB1,DOID:768,related
+24818,hematologic malignancy,hematologic cancer,DOID:2531,related
+24818,hematologic malignancy,malignant hematopoietic neoplasm (morphologic abnormality),DOID:2531,narrow
+24818,hematologic malignancy,tumor of hematopoietic system,DOID:2531,exact
+24818,hematologic neoplasms,hematologic cancer,DOID:2531,related
+24818,hematologic neoplasms,malignant hematopoietic neoplasm (morphologic abnormality),DOID:2531,narrow
+24818,hematologic neoplasms,tumor of hematopoietic system,DOID:2531,exact
+24818,hematological malignancies,hematologic cancer,DOID:2531,related
+24818,hematological malignancies,malignant hematopoietic neoplasm (morphologic abnormality),DOID:2531,narrow
+24818,hematological malignancies,tumor of hematopoietic system,DOID:2531,exact
+24818,hematological malignancy,hematologic cancer,DOID:2531,related
+24818,hematological malignancy,malignant hematopoietic neoplasm (morphologic abnormality),DOID:2531,narrow
+24818,hematological malignancy,tumor of hematopoietic system,DOID:2531,exact
+24818,hematopoietic and solid tumors,hematologic cancer,DOID:2531,related
+24818,hematopoietic and solid tumors,malignant hematopoietic neoplasm (morphologic abnormality),DOID:2531,narrow
+24818,hematopoietic and solid tumors,tumor of hematopoietic system,DOID:2531,exact
+212831,hepatoblastoma,pediatric hepatoblastoma,DOID:687,exact
+212831,hepatoblastomas,pediatric hepatoblastoma,DOID:687,exact
+77814,hepatoma,adult primary hepatocellular carcinoma,DOID:684,narrow
+77814,hepatoma,adult primary hepatocellular carcinoma,DOID:686,narrow
+77814,hepatoma,liver cancer,DOID:684,related
+77814,hepatoma,liver cancer,DOID:686,related
+77814,hepatoma,primary carcinoma of the liver cells,DOID:684,exact
+77814,hepatoma,primary carcinoma of the liver cells,DOID:686,exact
+93146,hereditary and non hereditary retinoblastoma,"retinoblastoma, malignant",DOID:768,exact
+93146,hereditary and non hereditary retinoblastoma,retinoblastoma; RB1,DOID:768,related
+93146,hereditary or non hereditary retinoblastoma,"retinoblastoma, malignant",DOID:768,exact
+93146,hereditary or non hereditary retinoblastoma,retinoblastoma; RB1,DOID:768,related
+93146,hereditary retinoblastoma,"retinoblastoma, malignant",DOID:768,exact
+93146,hereditary retinoblastoma,retinoblastoma; RB1,DOID:768,related
+51640,intra-abdominal carcinomatosis,"carcinoma, NOS",DOID:305,related
+51640,intra-abdominal carcinomatosis,malignant epithelioma,DOID:305,exact
+22681,jaw tumor,malignant neoplasm of jaw skeleton,DOID:1862,exact
+22681,jaw tumor,neoplasm of jaw,DOID:1862,broad
+64196,juvenile granulosa cell tumour,"granulosa cell tumor, undetermined",DOID:2999,related
+64196,juvenile granulosa cell tumour,tumor of granulosa cell,DOID:2999,exact
+25179,kidney cancer,renal cancer,DOID:263,exact
+52806,leiomyosarcoma,"leiomyosarcoma, malignant",DOID:1967,exact
+52826,leukaemia,"leukemia, NOS",DOID:1240,related
+52826,leukaemia,"leukemias, general",DOID:1240,exact
+52826,leukemia,"leukemia, NOS",DOID:1240,related
+52826,leukemia,"leukemias, general",DOID:1240,exact
+52826,leukemias,"leukemia, NOS",DOID:1240,related
+52826,leukemias,"leukemias, general",DOID:1240,exact
+52826,leukemic,"leukemia, NOS",DOID:1240,related
+52826,leukemic,"leukemias, general",DOID:1240,exact
+52892,lymphoid malignancies,"lymphoma, NOS",DOID:0060058,related
+52892,lymphoid malignancies,malignant lymphoma,DOID:0060058,exact
+52892,lymphoid malignancy,"lymphoma, NOS",DOID:0060058,related
+52892,lymphoid malignancy,malignant lymphoma,DOID:0060058,exact
+52892,lymphoid neoplasias,"lymphoma, NOS",DOID:0060058,related
+52892,lymphoid neoplasias,malignant lymphoma,DOID:0060058,exact
+52892,lymphoid neoplasms,"lymphoma, NOS",DOID:0060058,related
+52892,lymphoid neoplasms,malignant lymphoma,DOID:0060058,exact
+52892,lymphoma,"lymphoma, NOS",DOID:0060058,related
+52892,lymphoma,malignant lymphoma,DOID:0060058,exact
+59435,male and female breast cancer,"breast cancer, male",DOID:1614,related
+59435,male and female breast cancer,neoplasm of male breast,DOID:1614,exact
+59435,male breast cancer,"breast cancer, male",DOID:1614,related
+59435,male breast cancer,neoplasm of male breast,DOID:1614,exact
+61942,male cancer,"malignant neoplasm of male genital organ, NOS",DOID:3856,related
+61942,male cancer,malignant tumor of the Male reproductive system,DOID:3856,exact
+61942,male cancer,tumor of male reproductive system,DOID:3856,broad
+53627,malignant melanoma,"melanoma, malignant",DOID:1909,exact
+53627,malignant melanoma of soft parts,"melanoma, malignant",DOID:1909,exact
+29208,malignant rhabdoid tumors,rhabdoid cancer,DOID:3672,related
+29208,malignant rhabdoid tumors,rhabdoid tumor,DOID:3672,exact
+62198,malignant tumor of the liver,"tumor, mixed, malignant",DOID:154,exact
+62198,malignant tumor of the liver,"tumors, malignant mixed",DOID:154,related
+62198,malignant tumors,"tumor, mixed, malignant",DOID:154,exact
+62198,malignant tumors,"tumors, malignant mixed",DOID:154,related
+58352,mature T-cell leukaemia,leukemia (disease) of T cell,DOID:715,exact
+87540,medulloblastoma,"medulloblastoma, malignant",DOID:0050902,exact
+87540,medulloblastoma,"medulloblastoma, malignant",DOID:0060104,exact
+87540,medulloblastoma,medulloblastoma; MDB,DOID:0050902,related
+87540,medulloblastoma,medulloblastoma; MDB,DOID:0060104,related
+87540,medulloblastomas,"medulloblastoma, malignant",DOID:0050902,exact
+87540,medulloblastomas,"medulloblastoma, malignant",DOID:0060104,exact
+87540,medulloblastomas,medulloblastoma; MDB,DOID:0050902,related
+87540,medulloblastomas,medulloblastoma; MDB,DOID:0060104,related
+53627,melanoma,"melanoma, malignant",DOID:1909,exact
+53627,melanomas,"melanoma, malignant",DOID:1909,exact
+72710,mesenchymal tumour,mesenchymoma,DOID:2668,exact
+92386,metastatic prostate cancer,hereditary prostate cancer,DOID:10283,narrow
+92386,metastatic prostate cancer,prostatic cancer,DOID:10283,exact
+92386,metastatic prostate cancer,tumor of the prostate,DOID:10283,broad
+53044,neuroblastoma,NB,DOID:769,related
+53044,neuroblastoma,"neuroblastoma, malignant",DOID:769,exact
+57605,neuroectodermal tumors,neuroepithelioma,DOID:171,related
+57605,neuroectodermal tumors,primitive neuroectodermal tumor (PNET),DOID:171,exact
+28578,neurofibrosarcoma,neurosarcoma [obs],DOID:3512,exact
+28578,neurofibrosarcomas,neurosarcoma [obs],DOID:3512,exact
+214645,non-Hodgkins lymphoma,"non-Hodgkin lymphoma, NOS",DOID:0060060,related
+214645,non-Hodgkins lymphoma,non-Hodgkins lymphoma,DOID:0060060,exact
+90400,non-familial breast and ovarian cancers,ovary cancer,DOID:2394,exact
+90400,non-familial breast and ovarian cancers,primary ovarian cancer,DOID:2394,related
+90400,non-familial breast and ovarian cancers,tumor of the ovary,DOID:2394,broad
+53275,non-papillary renal cell carcinoma,renal cell adenocarcinoma,DOID:4450,related
+53275,non-papillary renal cell carcinoma,renal cell carcinoma,DOID:4450,exact
+53275,non-papillary renal cell carcinomas,renal cell adenocarcinoma,DOID:4450,related
+53275,non-papillary renal cell carcinomas,renal cell carcinoma,DOID:4450,exact
+52892,noncentrocytic lymphomas,"lymphoma, NOS",DOID:0060058,related
+52892,noncentrocytic lymphomas,malignant lymphoma,DOID:0060058,exact
+53275,nonpapillary renal cell carcinoma,renal cell adenocarcinoma,DOID:4450,related
+53275,nonpapillary renal cell carcinoma,renal cell carcinoma,DOID:4450,exact
+199156,oligodendroglioma,oligodendroglial tumor,DOID:3181,broad
+199156,oligodendroglioma,"oligodendroglioma, NOS",DOID:3181,related
+199156,oligodendroglioma,well differentiated oligodendroglioma,DOID:3181,exact
+27979,osteosarcoma,primary osteosarcoma of bone,DOID:3376,exact
+90400,ovarian and early-onset,ovary cancer,DOID:2394,exact
+90400,ovarian and early-onset,primary ovarian cancer,DOID:2394,related
+90400,ovarian and early-onset,tumor of the ovary,DOID:2394,broad
+90400,ovarian cancer,ovary cancer,DOID:2394,exact
+90400,ovarian cancer,primary ovarian cancer,DOID:2394,related
+90400,ovarian cancer,tumor of the ovary,DOID:2394,broad
+90400,ovarian cancers,ovary cancer,DOID:2394,exact
+90400,ovarian cancers,primary ovarian cancer,DOID:2394,related
+90400,ovarian cancers,tumor of the ovary,DOID:2394,broad
+90400,ovarian carcinomas,ovary cancer,DOID:2394,exact
+90400,ovarian carcinomas,primary ovarian cancer,DOID:2394,related
+90400,ovarian carcinomas,tumor of the ovary,DOID:2394,broad
+90400,ovarian or breast cancer,ovary cancer,DOID:2394,exact
+90400,ovarian or breast cancer,primary ovarian cancer,DOID:2394,related
+90400,ovarian or breast cancer,tumor of the ovary,DOID:2394,broad
+90400,ovarian or other cancers,ovary cancer,DOID:2394,exact
+90400,ovarian or other cancers,primary ovarian cancer,DOID:2394,related
+90400,ovarian or other cancers,tumor of the ovary,DOID:2394,broad
+90400,ovarian tumor,ovary cancer,DOID:2394,exact
+90400,ovarian tumor,primary ovarian cancer,DOID:2394,related
+90400,ovarian tumor,tumor of the ovary,DOID:2394,broad
+90400,ovarian tumors,ovary cancer,DOID:2394,exact
+90400,ovarian tumors,primary ovarian cancer,DOID:2394,related
+90400,ovarian tumors,tumor of the ovary,DOID:2394,broad
+90400,"ovarian, gastric, and biliary system carcinomas",ovary cancer,DOID:2394,exact
+90400,"ovarian, gastric, and biliary system carcinomas",primary ovarian cancer,DOID:2394,related
+90400,"ovarian, gastric, and biliary system carcinomas",tumor of the ovary,DOID:2394,broad
+53275,papillary renal cell tumours,renal cell adenocarcinoma,DOID:4450,related
+53275,papillary renal cell tumours,renal cell carcinoma,DOID:4450,exact
+32682,pineal and retinal tumours,retinal tumor,DOID:4645,exact
+90400,premenopausal ovarian cancer,ovary cancer,DOID:2394,exact
+90400,premenopausal ovarian cancer,primary ovarian cancer,DOID:2394,related
+90400,premenopausal ovarian cancer,tumor of the ovary,DOID:2394,broad
+92386,prostate adenocarcinoma,hereditary prostate cancer,DOID:10283,narrow
+92386,prostate adenocarcinoma,prostatic cancer,DOID:10283,exact
+92386,prostate adenocarcinoma,tumor of the prostate,DOID:10283,broad
+92386,prostate cancer,hereditary prostate cancer,DOID:10283,narrow
+92386,prostate cancer,prostatic cancer,DOID:10283,exact
+92386,prostate cancer,tumor of the prostate,DOID:10283,broad
+92386,prostate carcinoma,hereditary prostate cancer,DOID:10283,narrow
+92386,prostate carcinoma,prostatic cancer,DOID:10283,exact
+92386,prostate carcinoma,tumor of the prostate,DOID:10283,broad
+92386,prostate carcinomas,hereditary prostate cancer,DOID:10283,narrow
+92386,prostate carcinomas,prostatic cancer,DOID:10283,exact
+92386,prostate carcinomas,tumor of the prostate,DOID:10283,broad
+92386,prostate tumors,hereditary prostate cancer,DOID:10283,narrow
+92386,prostate tumors,prostatic cancer,DOID:10283,exact
+92386,prostate tumors,tumor of the prostate,DOID:10283,broad
+92386,prostatic adenocarcinoma,hereditary prostate cancer,DOID:10283,narrow
+92386,prostatic adenocarcinoma,prostatic cancer,DOID:10283,exact
+92386,prostatic adenocarcinoma,tumor of the prostate,DOID:10283,broad
+92386,prostatic cancer,hereditary prostate cancer,DOID:10283,narrow
+92386,prostatic cancer,prostatic cancer,DOID:10283,exact
+92386,prostatic cancer,tumor of the prostate,DOID:10283,broad
+92386,"prostatic, pancreas, skin, and lung cancer",hereditary prostate cancer,DOID:10283,narrow
+92386,"prostatic, pancreas, skin, and lung cancer",prostatic cancer,DOID:10283,exact
+92386,"prostatic, pancreas, skin, and lung cancer",tumor of the prostate,DOID:10283,broad
+53275,renal cell carcinoma,renal cell adenocarcinoma,DOID:4450,related
+53275,renal cell carcinoma,renal cell carcinoma,DOID:4450,exact
+53275,renal cell carcinomas,renal cell adenocarcinoma,DOID:4450,related
+53275,renal cell carcinomas,renal cell carcinoma,DOID:4450,exact
+25179,renal lesions,renal cancer,DOID:263,exact
+32682,retinal and the pineal tumours,retinal tumor,DOID:4645,exact
+93146,"retinal, cerebellar and spinal haemangioblastomas","retinoblastoma, malignant",DOID:768,exact
+93146,"retinal, cerebellar and spinal haemangioblastomas",retinoblastoma; RB1,DOID:768,related
+93146,retinoblastoma,"retinoblastoma, malignant",DOID:768,exact
+93146,retinoblastoma,retinoblastoma; RB1,DOID:768,related
+93146,retinoblastoma (RB) tumor,"retinoblastoma, malignant",DOID:768,exact
+93146,retinoblastoma (RB) tumor,retinoblastoma; RB1,DOID:768,related
+93146,retinoblastoma tumors,"retinoblastoma, malignant",DOID:768,exact
+93146,retinoblastoma tumors,retinoblastoma; RB1,DOID:768,related
+93146,retinoblastoma tumours,"retinoblastoma, malignant",DOID:768,exact
+93146,retinoblastoma tumours,retinoblastoma; RB1,DOID:768,related
+93146,retinoblastomas,"retinoblastoma, malignant",DOID:768,exact
+93146,retinoblastomas,retinoblastoma; RB1,DOID:768,related
+29208,rhabdoid,rhabdoid cancer,DOID:3672,related
+29208,rhabdoid,rhabdoid tumor,DOID:3672,exact
+29208,rhabdoid tumors,rhabdoid cancer,DOID:3672,related
+29208,rhabdoid tumors,rhabdoid tumor,DOID:3672,exact
+53332,sarcomas,tumor of soft tissue and skeleton,DOID:1115,exact
+32001,seminoma,"seminoma, pure",DOID:4440,exact
+90400,sporadic (nonhereditary) ovarian cancers,ovary cancer,DOID:2394,exact
+90400,sporadic (nonhereditary) ovarian cancers,primary ovarian cancer,DOID:2394,related
+90400,sporadic (nonhereditary) ovarian cancers,tumor of the ovary,DOID:2394,broad
+53275,sporadic RCC,renal cell adenocarcinoma,DOID:4450,related
+53275,sporadic RCC,renal cell carcinoma,DOID:4450,exact
+58352,sporadic T-cell leukaemia,leukemia (disease) of T cell,DOID:715,exact
+90400,sporadic breast and ovarian cancers,ovary cancer,DOID:2394,exact
+90400,sporadic breast and ovarian cancers,primary ovarian cancer,DOID:2394,related
+90400,sporadic breast and ovarian cancers,tumor of the ovary,DOID:2394,broad
+18113,"sporadic breast, brain, prostate and kidney cancer",malignant tumor of adult brain,DOID:1319,narrow
+18113,"sporadic breast, brain, prostate and kidney cancer",primary brain tumor,DOID:1319,related
+18113,"sporadic breast, brain, prostate and kidney cancer",primary malignant neoplasm of brain,DOID:1319,exact
+18113,"sporadic breast, brain, prostate and kidney cancer",tumor of the brain,DOID:1319,broad
+92386,"sporadic breast, brain, prostate and kidney cancer",hereditary prostate cancer,DOID:10283,narrow
+92386,"sporadic breast, brain, prostate and kidney cancer",prostatic cancer,DOID:10283,exact
+92386,"sporadic breast, brain, prostate and kidney cancer",tumor of the prostate,DOID:10283,broad
+25179,"sporadic breast, brain, prostate and kidney cancer",renal cancer,DOID:263,exact
+90400,sporadic ovarian tumours,ovary cancer,DOID:2394,exact
+90400,sporadic ovarian tumours,primary ovarian cancer,DOID:2394,related
+90400,sporadic ovarian tumours,tumor of the ovary,DOID:2394,broad
+92386,sporadic prostate cancer,hereditary prostate cancer,DOID:10283,narrow
+92386,sporadic prostate cancer,prostatic cancer,DOID:10283,exact
+92386,sporadic prostate cancer,tumor of the prostate,DOID:10283,broad
+53275,sporadic renal cell carcinoma,renal cell adenocarcinoma,DOID:4450,related
+53275,sporadic renal cell carcinoma,renal cell carcinoma,DOID:4450,exact
+53275,sporadic renal cell carcinomas,renal cell adenocarcinoma,DOID:4450,related
+53275,sporadic renal cell carcinomas,renal cell carcinoma,DOID:4450,exact
+52892,thymic lymphomas,"lymphoma, NOS",DOID:0060058,related
+52892,thymic lymphomas,malignant lymphoma,DOID:0060058,exact
+93146,unilateral and bilateral retinoblastoma,"retinoblastoma, malignant",DOID:768,exact
+93146,unilateral and bilateral retinoblastoma,retinoblastoma; RB1,DOID:768,related
+93146,unilateral retinoblastoma,"retinoblastoma, malignant",DOID:768,exact
+93146,unilateral retinoblastoma,retinoblastoma; RB1,DOID:768,related

@@ -1,17 +1,16 @@
-import os
+import os, pronto
 ABS_PATH = os.path.dirname(os.path.abspath(__file__))
 
-import preon as _pronto
-import numpy as np
 import pandas as pd
+import daproli as dp
 
 
 def download_do_cancers():
     pass
 
 
-def load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.csv", expand_doids=True):
-    ot = _pronto.Ontology(file_path)
+def load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo", expand_doids=False):
+    ot = pronto.Ontology(file_path)
 
     cancer_types = []
     doids = []
@@ -51,3 +50,75 @@ def load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.csv", expand_doi
                 doids.append(superclass.id)
 
     return cancer_types, doids
+
+
+def load_do_flat_mapping(file_path=f"{ABS_PATH}/resources/do_cancers.obo"):
+    ot = pronto.Ontology(file_path)
+    mapping = dict()
+
+    start_ids = ["DOID:0050687", "DOID:0050686"]
+
+    for start_id in start_ids:
+        for term in ot[start_id].subclasses(distance=1):
+            for sub_term in term.subclasses():
+                if sub_term.id not in mapping: mapping[sub_term.id] = list()
+                mapping[sub_term.id].append(term.id)
+
+    return mapping
+
+
+def apply_do_flat_mapping_to_ontology(cancer_types, doids, do_flat_mapping):
+    doids = dp.map(lambda doid: do_flat_mapping[doid], doids)
+    expand_cancer_types, expanded_doids = [], []
+
+    for cancer_type, entries in zip(cancer_types, doids):
+        for doid in entries:
+            expand_cancer_types.append(cancer_type)
+            expanded_doids.append(doid)
+
+    return expand_cancer_types, expanded_doids
+
+
+def apply_do_flat_mapping_to_goldstandard(cancer_types, doids, do_flat_mapping):
+    new_cancer_types, new_doids = [], []
+
+    for cancer_type, entries in zip(cancer_types, doids):
+        if entries != [None]:
+            entries = dp.filter(lambda doid: doid in do_flat_mapping, entries, ret_type=list)
+            entries = dp.map(lambda doid: do_flat_mapping[doid], entries, ret_type=list)
+            entries = dp.flatten(entries, ret_type=list)
+
+        if len(entries) > 0:
+            new_cancer_types.append(cancer_type), new_doids.append(entries)
+
+    return new_cancer_types, new_doids
+
+
+def load_database_cancer_goldstandard(file_path=f"{ABS_PATH}/resources/database_cancer_goldstandard.csv"):
+    df = pd.read_csv(file_path, sep=';')
+    sources, cancer_types, doids = [], [], []
+
+    for _, (source, cancer_type, doid) in df.iterrows():
+        if doid != doid:
+            doid = [None]
+        else:
+            doid = doid.split(',')
+
+        sources.append(source)
+        cancer_types.append(cancer_type)
+        doids.append(doid)
+
+    return cancer_types, doids
+
+
+def load_ncbi_cancer_goldstandard(file_path=f"{ABS_PATH}/resources/ncbi_cancer_goldstandard.csv"):
+    df = pd.read_csv(file_path)
+
+    cancer_types = []
+    dids = []
+
+    for ncbi_name, df_group in df.groupby("ncbi_name"):
+        cancer_types.append(ncbi_name)
+        dids.append(df_group["disease_id"].unique().tolist())
+
+    return cancer_types, dids
