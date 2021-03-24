@@ -4,13 +4,35 @@ ABS_PATH = os.path.dirname(os.path.abspath(__file__))
 import pandas as pd
 
 
-def download_ebi_drugs():
-    pass
+def load_ebi_drugs(file_path=f"{ABS_PATH}/resources/ebi_drugs.csv"):
+    df = pd.read_csv(file_path, delimiter=';', low_memory=False)
 
+    # reduce size
+    df = df[["Name", "Synonyms", "ChEMBL ID"]]
 
-def load_ebi_drugs(file_path=f"{ABS_PATH}/resources/ebi_drugs.tsv"):
-    df = pd.read_csv(file_path, sep='\t')
-    return df.name.tolist(), df.chembl_id.tolist()
+    # filter df
+    df = df[df.Name.notna() & df["ChEMBL ID"].notna()]
+
+    drug_names, chembl_ids = [], []
+
+    for idx, (name, synonyms, chembl_id) in df.iterrows():
+        names = []
+
+        # check for empty, add name
+        if len(name) > 0:
+            names.append(name)
+
+        # check for nan/empty, add synonyms
+        if isinstance(synonyms, str) and len(synonyms) > 0:
+            for s in synonyms.split("|"):
+                names.append(s)
+
+        # check for empty, add chembl id
+        if len(chembl_id) > 0:
+            drug_names.extend(names)
+            chembl_ids.extend([chembl_id] * len(names))
+
+    return drug_names, chembl_ids
 
 
 def load_charite_drug_goldstandard(file_path=f"{ABS_PATH}/resources/charite_drug_goldstandard.csv"):

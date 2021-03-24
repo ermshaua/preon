@@ -1,12 +1,18 @@
-import os, pronto
+import os, urllib.request, pronto
 ABS_PATH = os.path.dirname(os.path.abspath(__file__))
 
 import pandas as pd
 import daproli as dp
 
 
-def download_do_cancers():
-    pass
+def download_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo"):
+    url = "https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/doid.obo"
+
+    with urllib.request.urlopen(url) as file:
+        ot = file.read().decode('utf-8')
+
+    with open(file_path, "w") as file:
+        file.write(ot)
 
 
 def load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo", expand_doids=False):
@@ -50,6 +56,13 @@ def load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo", expand_doi
                 doids.append(superclass.id)
 
     return cancer_types, doids
+
+
+def download_or_load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo", expand_doids=False):
+    if not os.path.exists(file_path):
+        download_do_cancers(file_path)
+
+    return load_do_cancers(file_path=file_path, expand_doids=expand_doids)
 
 
 def load_do_flat_mapping(file_path=f"{ABS_PATH}/resources/do_cancers.obo"):

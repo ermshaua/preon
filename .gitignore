@@ -23,3 +23,6 @@ __pycache__
 .metadata/
 .recommenders/
 .DS_Store
+
+do_cancers.obo
+ebi_drugs.csv

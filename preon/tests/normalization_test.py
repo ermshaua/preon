@@ -2,7 +2,7 @@ import unittest
 
 from preon.normalization import PrecisionOncologyNormalizer
 from preon.drug import load_ebi_drugs, load_charite_drug_goldstandard, load_database_drug_goldstandard, load_ctg_drug_goldstandard
-from preon.cancer import load_do_cancers, load_do_flat_mapping, apply_do_flat_mapping_to_ontology, apply_do_flat_mapping_to_goldstandard, \
+from preon.cancer import download_or_load_do_cancers, load_do_flat_mapping, apply_do_flat_mapping_to_ontology, apply_do_flat_mapping_to_goldstandard, \
     load_database_cancer_goldstandard, load_ncbi_cancer_goldstandard
 from preon.tests.utils import f1_score
 
@@ -40,7 +40,7 @@ class DrugNormalizationTest(unittest.TestCase):
 class CancerNormalizationTest(unittest.TestCase):
 
     def test_database_cancer_goldstandard(self):
-        cancer_types, doids = load_do_cancers()
+        cancer_types, doids = download_or_load_do_cancers()
         do_flat_mapping = load_do_flat_mapping()
 
         cancer_types, doids = apply_do_flat_mapping_to_ontology(cancer_types, doids, do_flat_mapping)
@@ -53,7 +53,7 @@ class CancerNormalizationTest(unittest.TestCase):
         assert f1_score(df_eval) > .9
 
     def test_ncbi_cancer_goldstandard(self):
-        cancer_types, doids = load_do_cancers()
+        cancer_types, doids = download_or_load_do_cancers()
         do_flat_mapping = load_do_flat_mapping()
 
         cancer_types, doids = apply_do_flat_mapping_to_ontology(cancer_types, doids, do_flat_mapping)
