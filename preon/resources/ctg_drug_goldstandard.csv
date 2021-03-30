@@ -1,0 +1,98 @@
+treatment,drug_name,nct_id,chembl_id,treatment_type
+capecitabine,capecitabine,NCT00536809,CHEMBL1773,Drug
+Chemotherapy,Chemotherapy,NCT00087776,,Drug
+Elesclomol (STA-4783),Elesclomol,NCT00522834,CHEMBL1972860,Drug
+PLX038,PLX038,NCT02646852,CHEMBL2107340,Drug
+Bendamustine,Bendamustine,NCT01871675,CHEMBL487253,Drug
+rhIL-7,rhIL-7,NCT00923351,CHEMBL4297772,Drug
+Rituximab,Rituximab,NCT00498316,CHEMBL1201576,Drug
+carboplatin,carboplatin,NCT00598169,CHEMBL1351,Drug
+UV1 vaccine + leukine,UV1 vaccine,NCT04300244,,Biological
+UV1 vaccine + leukine,leukine,NCT04300244,CHEMBL1201670,Biological
+Paclitaxel.,Paclitaxel,NCT03678883,CHEMBL428647,Drug
+Dabrafenib (BRAF Inhibitor),Dabrafenib,NCT03972046,CHEMBL2028663,Drug
+Gabapentin,Gabapentin,NCT02480114,CHEMBL940,Drug
+Paclitaxel,Paclitaxel,NCT03509012,CHEMBL428647,Drug
+"Temozolomide, Tamoxifen, Maprotiline",Temozolomide,NCT04200066,CHEMBL810,Drug
+"Temozolomide, Tamoxifen, Maprotiline",Tamoxifen,NCT04200066,CHEMBL83,Drug
+"Temozolomide, Tamoxifen, Maprotiline",Maprotiline,NCT04200066,CHEMBL21731,Drug
+Radotinib,Radotinib,NCT01511289,CHEMBL4297524,Drug
+Apatinib,Apatinib,NCT04126993,CHEMBL3186534,Drug
+GM-CSF,GM-CSF,NCT00471471,CHEMBL2107881,Biological
+CC-5013,CC-5013,NCT00057616,CHEMBL848,Drug
+Pazopanib,Pazopanib,NCT02331498,CHEMBL477772,Drug
+Prexasertib,Prexasertib,NCT02514603,CHEMBL3544911,Drug
+rituximab,rituximab,NCT00031902,CHEMBL1201576,Biological
+BI 860585,BI 860585,NCT01938846,,Drug
+Panitumumab,Panitumumab,NCT00418938,CHEMBL1201827,Drug
+Vincristine Sulfate,Vincristine Sulfate,NCT00002835,CHEMBL501867,Drug
+Daunorubicin,Daunorubicin,NCT00002925,CHEMBL178,Drug
+Obinutuzumab,Obinutuzumab,NCT02292225,CHEMBL1743048,Drug
+ZIO-101 (Darinaparsin),Darinaparsin,NCT00592046,CHEMBL3247378,Drug
+Pemetrexed,Pemetrexed,NCT00895648,CHEMBL225072,Drug
+E7080,E7080,NCT00280397,CHEMBL1289601,Drug
+AMG 319,AMG 319,NCT01300026,CHEMBL3545048,Drug
+Capecitabine,Capecitabine,NCT02915172,CHEMBL1773,Drug
+Everolimus,Everolimus,NCT00671112,CHEMBL1908360,Drug
+Bupivacaine,Bupivacaine,NCT03177252,CHEMBL1098,Drug
+Matched placebo,Placebo,NCT00275262,,Drug
+cisplatin,cisplatin,NCT00003263,CHEMBL1386,Drug
+Placebo,Placebo,NCT00428597,,Drug
+ADXS31-142 + Pembrolizumab (MK-3475),ADXS31-142,NCT02325557,,Drug
+ADXS31-142 + Pembrolizumab (MK-3475),Pembrolizumab,NCT02325557,CHEMBL3137343,Drug
+ATRA,ATRA,NCT00599937,CHEMBL38,Drug
+pemetrexed,pemetrexed,NCT00415636,CHEMBL225072,Drug
+131I-TM601,131I-TM601,NCT00114309,CHEMBL4298122,Drug
+Nab-paclitaxel,Nab-paclitaxel,NCT02590003,CHEMBL428647,Drug
+Paclitaxel-trastzumab,paclitaxel,NCT02226757,CHEMBL428647,Drug
+Paclitaxel-trastzumab,trastzumab,NCT02226757,CHEMBL1201585,Drug
+gallium nitrate,gallium nitrate,NCT00002543,CHEMBL1200983,Drug
+Brigatinib,Brigatinib,NCT02925234,CHEMBL3545311,Drug
+Epinephrine,Epinephrine,NCT02740127,CHEMBL679,Drug
+incomplete Freund's adjuvant,incomplete Freund's adjuvant,NCT00019383,,Biological
+Pembrolizumab,Pembrolizumab,NCT03233724,CHEMBL3137343,Drug
+temozolomide,temozolomide,NCT00626015,CHEMBL810,Drug
+GEN1042,GEN1042,NCT04083599,,Biological
+Tacrolimus,Tacrolimus,NCT03959241,CHEMBL269732,Drug
+9-ING-41,9-ING-41,NCT04239092,CHEMBL483465,Drug
+Gemcitabine - 28 day cycle,Gemcitabine ,NCT03678883,CHEMBL888,Drug
+Nivolumab,Nivolumab,NCT03400332,CHEMBL2108738,Biological
+CBD,CBD,NCT02071862,CHEMBL190461,Drug
+Fluoropyrimidine (capecitabine or 5-fluorouracil),capecitabine,NCT04194957,CHEMBL1773,Drug
+Fluoropyrimidine (capecitabine or 5-fluorouracil),5-fluorouracil,NCT04194957,CHEMBL185,Drug
+Durvalumab,Durvalumab,NCT03088059,CHEMBL3301587,Drug
+Standard of Care,Standard of Care,NCT03575351,,Drug
+Pertuzumab,Pertuzumab,NCT03498521,CHEMBL2007641,Drug
+velcade,velcade,NCT00505700,CHEMBL325041,Drug
+methotrexate,methotrexate,NCT00276601,CHEMBL34259,Drug
+Gemtuzumab Ozogamicin,Gemtuzumab Ozogamicin,NCT04337138,CHEMBL1201506,Drug
+isoflurane,isoflurane,NCT04074460,CHEMBL1256,Drug
+sevoflurane,sevoflurane,NCT04074460,CHEMBL1200694,Drug
+desflurane,desflurane,NCT04074460,CHEMBL1200733,Drug
+trabectedin,trabectedin,NCT01189253,CHEMBL450449,Drug
+"Xentuzumab, low dose, every week (qw)",Xentuzumab,NCT02145741,CHEMBL4297850,Drug
+Pembrolizumab at 35 days post,Pembrolizumab,NCT03277638,CHEMBL3137343,Drug
+asparaginase,asparaginase,NCT00002704,CHEMBL2108989,Drug
+Copanlisib,Copanlisib,NCT02465060,CHEMBL3218576,Drug
+AMG 337,AMG 337,NCT01253707,CHEMBL3545212,Drug
+Dasatinib,Dasatinib,NCT00320190,CHEMBL1421,Drug
+Epacadostat 100 mg,Epacadostat,NCT02862457,CHEMBL3545369,Drug
+Bevacizumab,Bevacizumab,NCT00525525,CHEMBL1201583,Drug
+Botulinum Toxin-A,Botulinum Toxin-A,NCT01427400,CHEMBL4297862,Drug
+Afatinib,Afatinib,NCT02465060,CHEMBL1173655,Drug
+leucovorin calcium,leucovorin calcium,NCT00096135,CHEMBL1201138,Drug
+etoposide,etoposide,NCT00018954,CHEMBL44657,Drug
+Oregovomab,Oregovomab,NCT04498117,CHEMBL2107917,Biological
+Immunotherapy,Immunotherapy,NCT04291092,,Drug
+filgrastim,filgrastim,NCT00003294,CHEMBL1201567,Biological
+Vinblastine Sulfate,Vinblastine Sulfate,NCT01132807,CHEMBL378544,Drug
+Thymoglobulin,Thymoglobulin,NCT02441803,CHEMBL1201650,Drug
+Leucovorin,Leucovorin,NCT03872947,CHEMBL1679,Drug
+Tumor lysate-pulsed DC vaccination+0.2% resiquimod,resiquimod,NCT01204684,CHEMBL383322,Biological
+PF-00299804,PF-00299804,NCT00548093,CHEMBL2105719,Drug
+doxorubicin hydrochloride,doxorubicin hydrochloride,NCT00005977,CHEMBL359744,Drug
+irinotecan hydrochloride,irinotecan hydrochloride,NCT01086345,CHEMBL3989514,Drug
+YM155,YM155,NCT00257478,CHEMBL2105734,Drug
+Dexamethosone,Dexamethosone,NCT00075101,CHEMBL384467,Drug
+Procarbazine Hydrochloride,Procarbazine Hydrochloride,NCT01132807,CHEMBL1200410,Drug
+helicobacter pylori vaccine,helicobacter pylori vaccine,NCT00613665,,Biological

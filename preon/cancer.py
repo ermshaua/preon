@@ -108,10 +108,10 @@ def apply_do_flat_mapping_to_goldstandard(cancer_types, doids, do_flat_mapping):
 
 
 def load_database_cancer_goldstandard(file_path=f"{ABS_PATH}/resources/database_cancer_goldstandard.csv"):
-    df = pd.read_csv(file_path, sep=';')
+    df = pd.read_csv(file_path)
     sources, cancer_types, doids = [], [], []
 
-    for _, (source, cancer_type, doid) in df.iterrows():
+    for _, (cancer_type, doid, source) in df.iterrows():
         if doid != doid:
             doid = [None]
         else:
@@ -130,8 +130,8 @@ def load_ncbi_cancer_goldstandard(file_path=f"{ABS_PATH}/resources/ncbi_cancer_g
     cancer_types = []
     dids = []
 
-    for ncbi_name, df_group in df.groupby("ncbi_name"):
+    for ncbi_name, df_group in df.groupby("cancer"):
         cancer_types.append(ncbi_name)
-        dids.append(df_group["disease_id"].unique().tolist())
+        dids.append(df_group["doid"].unique().tolist())
 
     return cancer_types, dids

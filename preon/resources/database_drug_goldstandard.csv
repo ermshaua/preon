@@ -1,101 +1,101 @@
-Drug Name,Source,Chembl ID,Drug Class,Found Directly,Comment
-HSP90 inhibitor,biomarkers,,yes,,
-Verapamil,biomarkers,CHEMBL6966,no,yes,
-Lenalidomide,biomarkers,CHEMBL848,no,yes,
-Anastrozole,biomarkers,CHEMBL1399,no,yes,
-Rucaparib,biomarkers,CHEMBL1173055,no,yes,
-Bendamustine,biomarkers,CHEMBL487253,no,yes,
-Flourouracil,biomarkers,CHEMBL185,no,no,
-EPZ-005687,biomarkers,CHEMBL3360855,no,no,mapped by inchi key
-Atezolizumab,biomarkers,CHEMBL3707227,no,yes,
-Neratinib,biomarkers,CHEMBL180022,no,yes,
-MEK inhibitor,biomarkers,,yes,,
-Afatinib,biomarkers,CHEMBL1173655,no,yes,
-Entrictinib,biomarkers,CHEMBL1983268,no,no,
-Nintedanib,biomarkers,CHEMBL502835,no,yes,
-Fulvestrant,biomarkers,CHEMBL1358,no,yes,
-GDC-0810,biomarkers,CHEMBL3581693,no,yes,
-Palbociclib,biomarkers,CHEMBL189963,no,yes,
-Gemcitabine,biomarkers,CHEMBL888,no,yes,
-Savolitinib,biomarkers,CHEMBL3334567,no,yes,
-Thioguanine,biomarkers,CHEMBL727,no,yes,
-Vandetanib,civic,CHEMBL24828,no,yes,
-Dinaciclib,civic,CHEMBL2103840,no,yes,
-Omipalisib,civic,CHEMBL1236962,no,yes,
-JAK2 Inhibitor AZD1480,civic,CHEMBL1231124,no,no,"description in the name, only AZD1480 relevant"
-Ridaforolimus,civic,CHEMBL2103839,no,yes,
-WYE354,civic,CHEMBL561708,no,no,
-Cabazitaxel,civic,CHEMBL1201748,no,yes,
-B-Raf/VEGFR-2 Inhibitor RAF265,civic,CHEMBL558752,no,no,"description in the name, only RAF265 relevant"
-Fluorouracil,civic,CHEMBL185,no,yes,
-Arabinosylguanine,civic,CHEMBL1201112,no,no,had to read the paper to identify correct drug (nelarabine) 
-Gefitinib,civic,CHEMBL939,no,yes,
-MTOR Kinase Inhibitor PP242,civic,CHEMBL1241674,no,no,"description in the name, only PP242 relevant and mapped by inchi key"
-Mitomycin,civic,CHEMBL105,no,yes,
-Pan-AKT Kinase Inhibitor GSK690693,civic,CHEMBL494089,no,no,"description in the name, only GSK690693 relevant"
-MTOR Kinase Inhibitor AZD8055,civic,CHEMBL1801204,no,no,"description in the name, only AZD8055 relevant"
-Pemetrexed,civic,CHEMBL225072,no,no,"homonym, mistake in ebi? It‘s an FDA approved drug and should not have two entries."
-Akt Inhibitor MK2206,civic,CHEMBL1079175,no,no,"description in the name, only MK2206 relevant"
-I-BET151,civic,CHEMBL2017291,no,no,"mapped by inchi key, no synonyms in chembl"
-Capmatinib,civic,CHEMBL3188267,no,yes,
-Bicalutamide,civic,CHEMBL409,no,yes,
-Copanlisib,oncoKB,CHEMBL3218576,no,yes,
-Quizartinib,oncoKB,CHEMBL576982,no,yes,
-Sunitinib,oncoKB,CHEMBL535,no,yes,
-LOXO-292,oncoKB,,no,no,"patented, could not find a chembl-ID"
-Erlotinib,oncoKB,CHEMBL553,no,yes,
-Vismodegib,oncoKB,CHEMBL473417,no,yes,
-Ribociclib,oncoKB,CHEMBL3545110,no,yes,
-Temsirolimus,oncoKB,CHEMBL1201182,no,yes,
-GDC-0077,oncoKB,CHEMBL4297757,no,yes,
-Crenolanib,oncoKB,CHEMBL2105728,no,yes,
-H3B-8800,oncoKB,,no,no,only found drugBank entry and no Chembl-ID
-Enasidenib,oncoKB,CHEMBL3989908,no,yes,
-Nilotinib,oncoKB,CHEMBL255863,no,yes,
-Cabozantinib,oncoKB,CHEMBL2105717,no,yes,
-Sorafenib,oncoKB,CHEMBL1336,no,yes,
-PLX8394,oncoKB,CHEMBL3545005,no,yes,
-Sonidegib,oncoKB,CHEMBL2105737,no,yes,
-Ivosidenib,oncoKB,CHEMBL3989958,no,yes,
-Olaparib,oncoKB,CHEMBL521686,no,yes,
-Lorlatinib,oncoKB,CHEMBL3286830,no,yes,
-PARP inhinitors,target,,yes,,
-Hormonal therapy,target,,yes,,
-PARP Inhibitors,target,,yes,,
-Enzalutamide,target,CHEMBL1082407,no,yes,
-Novel KIT Inhibitors,target,,yes,,
-BCL2 inhibitors,target,,yes,,
-Arsenic,target,CHEMBL1231052,no,yes,
-Transplant,target,,yes,,
-HDAC inhibitors,target,,yes,,
-Nutlin,target,,yes,,
-IFG1-R Inhibitor,target,,yes,,
-Porcupine inhibitors,target,,yes,,
-SYK inhibitors,target,,yes,,
-IDH inhibitorss,target,,yes,,
-FAK inhibitors,target,,yes,,
-JAK2 inhibitors,target,,yes,,
-nutlins,target,,yes,,
-Imatinib,target,CHEMBL941,no,yes,
-MDM2 inhibitors,target,,yes,,
-MET inhibitors,target,,yes,,
-Everolimus,target,CHEMBL1908360,no,yes,
-Cetuximab,target,CHEMBL1201577,no,yes,
-Phenformin,target,CHEMBL170988,no,yes,
-Ruxolitinib,target,CHEMBL1789941,no,yes,
-Tubulins,target,,no,,"Tubulins are usually a loading control in experiments, not used as drugs."
-Pertuzumab,target,CHEMBL2007641,no,yes,
-gene therapy,target,,yes,,
-SINE agents,target,,yes,,
-Crizotinib,target,CHEMBL601719,no,yes,
-ATRA,target,CHEMBL38,no,no,abbreviation
-Vemurafenib,target,CHEMBL1229517,no,yes,
-Androgen Deprivation,target,,no,,
-tofacitinib,target,CHEMBL221959,no,yes,
-HDAC,target,,yes,,
-APR-246,target,CHEMBL3186011,no,yes,
-kevetrin,target,CHEMBL4297540,no,yes,
-Platinum chemotherapy,target,,yes,,
-TDM1,target,CHEMBL2109399,no,no,
-Dasatinib,target,CHEMBL1421,no,yes,
-Hormone therapy,target,,yes,,
+treatment,chembl_id,drug_class,source
+HSP90 inhibitor,,yes,biomarkers
+Verapamil,CHEMBL6966,no,biomarkers
+Lenalidomide,CHEMBL848,no,biomarkers
+Anastrozole,CHEMBL1399,no,biomarkers
+Rucaparib,CHEMBL1173055,no,biomarkers
+Bendamustine,CHEMBL487253,no,biomarkers
+Flourouracil,CHEMBL185,no,biomarkers
+EPZ-005687,CHEMBL3360855,no,biomarkers
+Atezolizumab,CHEMBL3707227,no,biomarkers
+Neratinib,CHEMBL180022,no,biomarkers
+MEK inhibitor,,yes,biomarkers
+Afatinib,CHEMBL1173655,no,biomarkers
+Entrictinib,CHEMBL1983268,no,biomarkers
+Nintedanib,CHEMBL502835,no,biomarkers
+Fulvestrant,CHEMBL1358,no,biomarkers
+GDC-0810,CHEMBL3581693,no,biomarkers
+Palbociclib,CHEMBL189963,no,biomarkers
+Gemcitabine,CHEMBL888,no,biomarkers
+Savolitinib,CHEMBL3334567,no,biomarkers
+Thioguanine,CHEMBL727,no,biomarkers
+Vandetanib,CHEMBL24828,no,civic
+Dinaciclib,CHEMBL2103840,no,civic
+Omipalisib,CHEMBL1236962,no,civic
+JAK2 Inhibitor AZD1480,CHEMBL1231124,no,civic
+Ridaforolimus,CHEMBL2103839,no,civic
+WYE354,CHEMBL561708,no,civic
+Cabazitaxel,CHEMBL1201748,no,civic
+B-Raf/VEGFR-2 Inhibitor RAF265,CHEMBL558752,no,civic
+Fluorouracil,CHEMBL185,no,civic
+Arabinosylguanine,CHEMBL1201112,no,civic
+Gefitinib,CHEMBL939,no,civic
+MTOR Kinase Inhibitor PP242,CHEMBL1241674,no,civic
+Mitomycin,CHEMBL105,no,civic
+Pan-AKT Kinase Inhibitor GSK690693,CHEMBL494089,no,civic
+MTOR Kinase Inhibitor AZD8055,CHEMBL1801204,no,civic
+Pemetrexed,CHEMBL225072,no,civic
+Akt Inhibitor MK2206,CHEMBL1079175,no,civic
+I-BET151,CHEMBL2017291,no,civic
+Capmatinib,CHEMBL3188267,no,civic
+Bicalutamide,CHEMBL409,no,civic
+Copanlisib,CHEMBL3218576,no,oncoKB
+Quizartinib,CHEMBL576982,no,oncoKB
+Sunitinib,CHEMBL535,no,oncoKB
+LOXO-292,,no,oncoKB
+Erlotinib,CHEMBL553,no,oncoKB
+Vismodegib,CHEMBL473417,no,oncoKB
+Ribociclib,CHEMBL3545110,no,oncoKB
+Temsirolimus,CHEMBL1201182,no,oncoKB
+GDC-0077,CHEMBL4297757,no,oncoKB
+Crenolanib,CHEMBL2105728,no,oncoKB
+H3B-8800,,no,oncoKB
+Enasidenib,CHEMBL3989908,no,oncoKB
+Nilotinib,CHEMBL255863,no,oncoKB
+Cabozantinib,CHEMBL2105717,no,oncoKB
+Sorafenib,CHEMBL1336,no,oncoKB
+PLX8394,CHEMBL3545005,no,oncoKB
+Sonidegib,CHEMBL2105737,no,oncoKB
+Ivosidenib,CHEMBL3989958,no,oncoKB
+Olaparib,CHEMBL521686,no,oncoKB
+Lorlatinib,CHEMBL3286830,no,oncoKB
+PARP inhinitors,,yes,target
+Hormonal therapy,,yes,target
+PARP Inhibitors,,yes,target
+Enzalutamide,CHEMBL1082407,no,target
+Novel KIT Inhibitors,,yes,target
+BCL2 inhibitors,,yes,target
+Arsenic,CHEMBL1231052,no,target
+Transplant,,yes,target
+HDAC inhibitors,,yes,target
+Nutlin,,yes,target
+IFG1-R Inhibitor,,yes,target
+Porcupine inhibitors,,yes,target
+SYK inhibitors,,yes,target
+IDH inhibitorss,,yes,target
+FAK inhibitors,,yes,target
+JAK2 inhibitors,,yes,target
+nutlins,,yes,target
+Imatinib,CHEMBL941,no,target
+MDM2 inhibitors,,yes,target
+MET inhibitors,,yes,target
+Everolimus,CHEMBL1908360,no,target
+Cetuximab,CHEMBL1201577,no,target
+Phenformin,CHEMBL170988,no,target
+Ruxolitinib,CHEMBL1789941,no,target
+Tubulins,,no,target
+Pertuzumab,CHEMBL2007641,no,target
+gene therapy,,yes,target
+SINE agents,,yes,target
+Crizotinib,CHEMBL601719,no,target
+ATRA,CHEMBL38,no,target
+Vemurafenib,CHEMBL1229517,no,target
+Androgen Deprivation,,no,target
+tofacitinib,CHEMBL221959,no,target
+HDAC,,yes,target
+APR-246,CHEMBL3186011,no,target
+kevetrin,CHEMBL4297540,no,target
+Platinum chemotherapy,,yes,target
+TDM1,CHEMBL2109399,no,target
+Dasatinib,CHEMBL1421,no,target
+Hormone therapy,,yes,target

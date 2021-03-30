@@ -45,4 +45,4 @@ We find the relevant drug name `['ixabepilone']` and preon provides the meta inf
 
 preon finds the correct drug "Isavuconazonium" and provides the meta information that it is a partial match with 7% distance. It returns drug names with a distance smaller than 20% on default. In order to change this parameter, set the `threshold` argument in the query method.
 
-In a similar fashion you can normalize cancer types, genes or variants. we provide gold standards for preon with which we test it. For more detail, see the example <a href="https://github.com/ermshaua/preon/tree/main/preon/examples">notebooks</a>. We also use preon in practice to normalize and integrate medical data in the <a href="https://predict.informatik.hu-berlin.de/">PREDICT</a> project. 
+In a similar fashion you can normalize cancer types or genes. we provide gold standards for preon with which we test it. For more detail, see the example <a href="https://github.com/ermshaua/preon/tree/main/preon/examples">notebooks</a>. We also use preon in practice to normalize and integrate medical data in the <a href="https://predict.informatik.hu-berlin.de/">PREDICT</a> project. 
