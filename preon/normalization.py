@@ -10,6 +10,16 @@ from nltk import ngrams
 
 
 class PrecisionOncologyNormalizer:
+    '''
+    Provides normalization and search functionality for names with associated ids.
+
+    Examples
+    -----------
+    >>> drug_names, chembl_ids = load_ebi_drugs()
+    >>> normalizer = PrecisionOncologyNormalizer().fit(drug_names, chembl_ids)
+    >>> normalizer.query("Avastin")
+    (['avastin'], [['CHEMBL1201583']], {'match_type': 'exact'})
+    '''
 
     def _transform_name(self, name):
         name = name.lower()

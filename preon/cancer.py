@@ -6,6 +6,17 @@ import daproli as dp
 
 
 def download_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo"):
+    '''
+    Downloads and stores the disease ontology.
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the disease ontology should be stored.
+
+    Examples
+    -----------
+    >>> download_do_cancers()
+    '''
     url = "https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/doid.obo"
 
     with urllib.request.urlopen(url) as file:
@@ -16,6 +27,19 @@ def download_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo"):
 
 
 def load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo", expand_doids=False):
+    '''
+    Loads the disease ontology.
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the disease ontology is stored.
+    :param expand_doids: a flag to decide whether cancer sub or superclasses should be considered.
+    :return: a tupel of cancer types with associated doids.
+
+    Examples
+    -----------
+    >>> cancer_types, doids = load_do_cancers()
+    '''
     ot = pronto.Ontology(file_path)
 
     cancer_types = []
@@ -59,6 +83,19 @@ def load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo", expand_doi
 
 
 def download_or_load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo", expand_doids=False):
+    '''
+    Downloads or loads the disease ontology (depending whether it is stored or not).
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the disease ontology is/should be stored.
+    :param expand_doids: a flag to decide whether cancer sub or superclasses should be considered.
+    :return: a tupel of cancer types with associated doids.
+
+    Examples
+    -----------
+    >>> cancer_types, doids = download_or_load_do_cancers()
+    '''
     if not os.path.exists(file_path):
         download_do_cancers(file_path)
 
@@ -66,6 +103,20 @@ def download_or_load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo"
 
 
 def load_do_flat_mapping(file_path=f"{ABS_PATH}/resources/do_cancers.obo"):
+    '''
+    Loads a dictionary that maps the first two layers from the cancer disease ontology
+    to all of their sub classes.
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the disease ontology is stored.
+    :return: a dictionary that maps the first two layers from the disease ontology
+    to all of their sub classes.
+
+    Examples
+    -----------
+    >>> flat_mapping = load_do_flat_mapping()
+    '''
     ot = pronto.Ontology(file_path)
     mapping = dict()
 
@@ -81,6 +132,22 @@ def load_do_flat_mapping(file_path=f"{ABS_PATH}/resources/do_cancers.obo"):
 
 
 def apply_do_flat_mapping_to_ontology(cancer_types, doids, do_flat_mapping):
+    '''
+    Reduces the doids from the disease ontology to its first two cancer layers doids.
+
+    Parameter
+    -----------
+    :param cancer_types: cancer types from the disease ontology
+    :param doids: associated doids
+    :param do_flat_mapping: the flat mapping to reduce the doids
+    :return: a tupel of cancer types with associated doids.
+
+    Examples
+    -----------
+    >>> cancer_types, doids = download_or_load_do_cancers()
+    >>> do_flat_mapping = load_do_flat_mapping()
+    >>> cancer_types, doids = apply_do_flat_mapping_to_ontology(cancer_types, doids, do_flat_mapping)
+    '''
     doids = dp.map(lambda doid: do_flat_mapping[doid], doids)
     expand_cancer_types, expanded_doids = [], []
 
@@ -93,6 +160,23 @@ def apply_do_flat_mapping_to_ontology(cancer_types, doids, do_flat_mapping):
 
 
 def apply_do_flat_mapping_to_goldstandard(cancer_types, doids, do_flat_mapping):
+    '''
+    Reduces the doids from the provided gold standards to the first two cancer layers
+    from the disease ontology.
+
+    Parameter
+    -----------
+    :param cancer_types: cancer types from a gold standard
+    :param doids: associated doids
+    :param do_flat_mapping: the flat mapping to reduce the doids
+    :return: a tupel of cancer types with associated doids.
+
+    Examples
+    -----------
+    >>> cancer_types, doids = load_database_cancer_goldstandard()
+    >>> do_flat_mapping = load_do_flat_mapping()
+    >>> cancer_types, doids = apply_do_flat_mapping_to_goldstandard(cancer_types, doids, do_flat_mapping)
+    '''
     new_cancer_types, new_doids = [], []
 
     for cancer_type, entries in zip(cancer_types, doids):
@@ -108,6 +192,18 @@ def apply_do_flat_mapping_to_goldstandard(cancer_types, doids, do_flat_mapping):
 
 
 def load_database_cancer_goldstandard(file_path=f"{ABS_PATH}/resources/database_cancer_goldstandard.csv"):
+    '''
+    Loads our provided database gold standard.
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the gold standard is located.
+    :return: a tupel of cancer types with associated doids.
+
+    Examples
+    -----------
+    >>> cancer_types, doids = load_database_cancer_goldstandard()
+    '''
     df = pd.read_csv(file_path)
     sources, cancer_types, doids = [], [], []
 
@@ -125,6 +221,18 @@ def load_database_cancer_goldstandard(file_path=f"{ABS_PATH}/resources/database_
 
 
 def load_ncbi_cancer_goldstandard(file_path=f"{ABS_PATH}/resources/ncbi_cancer_goldstandard.csv"):
+    '''
+    Loads our provided ncbi gold standard.
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the gold standard is located.
+    :return: a tupel of cancer types with associated doids.
+
+    Examples
+    -----------
+    >>> cancer_types, doids = load_ncbi_cancer_goldstandard()
+    '''
     df = pd.read_csv(file_path)
 
     cancer_types = []

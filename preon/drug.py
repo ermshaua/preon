@@ -5,6 +5,18 @@ import pandas as pd
 
 
 def load_ebi_drugs(file_path=f"{ABS_PATH}/resources/ebi_drugs.csv"):
+    '''
+    Loads and parses EBI drug names downloaded from https://www.ebi.ac.uk/chembl/g/#search_results/compounds.
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the EBI compund file is located
+    :return: a tupel of drug names with associated chembl ids
+
+    Examples
+    -----------
+    >>> drug_names, chembl_ids = load_ebi_drugs()
+    '''
     df = pd.read_csv(file_path, delimiter=';', low_memory=False)
 
     # reduce size
@@ -36,6 +48,18 @@ def load_ebi_drugs(file_path=f"{ABS_PATH}/resources/ebi_drugs.csv"):
 
 
 def load_charite_drug_goldstandard(file_path=f"{ABS_PATH}/resources/charite_drug_goldstandard.csv"):
+    '''
+    Loads our provided charite gold standard.
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the gold standard is located.
+    :return: a tupel of drug names with associated chembl ids
+
+    Examples
+    -----------
+    >>> drug_names, chembl_ids = load_charite_drug_goldstandard()
+    '''
     df = pd.read_csv(file_path)
     df = df[df['drug_class'] == 'no']
 
@@ -50,6 +74,18 @@ def load_charite_drug_goldstandard(file_path=f"{ABS_PATH}/resources/charite_drug
 
 
 def load_database_drug_goldstandard(file_path=f"{ABS_PATH}/resources/database_drug_goldstandard.csv"):
+    '''
+    Loads our provided database gold standard.
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the gold standard is located.
+    :return: a tupel of drug names with associated chembl ids
+
+    Examples
+    -----------
+    >>> drug_names, chembl_ids = load_database_drug_goldstandard()
+    '''
     df = pd.read_csv(file_path)
     df = df[df['drug_class'] == 'no']
 
@@ -60,6 +96,18 @@ def load_database_drug_goldstandard(file_path=f"{ABS_PATH}/resources/database_dr
 
 
 def load_ctg_drug_goldstandard(file_path=f"{ABS_PATH}/resources/ctg_drug_goldstandard.csv"):
+    '''
+    Loads our provided ctg gold standard.
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the gold standard is located.
+    :return: a tupel of drug names with associated chembl ids
+
+    Examples
+    -----------
+    >>> drug_names, chembl_ids = load_ctg_drug_goldstandard()
+    '''
     df = pd.read_csv(file_path)
 
     drug_names = df['treatment'].to_numpy().tolist()
