@@ -240,6 +240,11 @@ def load_ncbi_cancer_goldstandard(file_path=f"{ABS_PATH}/resources/ncbi_cancer_g
 
     for ncbi_name, df_group in df.groupby("cancer"):
         cancer_types.append(ncbi_name)
-        dids.append(df_group["doid"].unique().tolist())
+        doids = df_group["doid"].unique().tolist()
+
+        if len(doids) == 1 and doids[0] != doids[0]:
+            dids.append([None])
+        else:
+            dids.append(doids)
 
     return cancer_types, dids

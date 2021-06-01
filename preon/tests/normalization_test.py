@@ -63,4 +63,4 @@ class CancerNormalizationTest(unittest.TestCase):
         cancer_types, doids = apply_do_flat_mapping_to_goldstandard(cancer_types, doids, do_flat_mapping)
         df_eval = normalizer.evaluate(cancer_types, doids, n_grams=3)
 
-        assert f1_score(df_eval) > .8
+        assert f1_score(df_eval) > .7
