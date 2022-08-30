@@ -1,0 +1,7 @@
+daproli==0.22
+jellyfish==0.9.0
+nltk==3.6.5
+numpy==1.21.2
+pandas==1.3.5
+pronto==2.5.0
+tqdm==4.62.3
