@@ -26,3 +26,4 @@ __pycache__
 
 do_cancers.obo
 ebi_drugs.csv
+drugbank_drugs.csv

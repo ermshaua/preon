@@ -1,4 +1,4 @@
-﻿treatment;chembl_id;drug_class;DrugBank
+﻿treatment;chembl_id;drug_class;drugbank_id
 mitomycin c;CHEMBL105;no;DB00305
 mk2206;CHEMBL1079175;no;DB16828
 mk 2206;CHEMBL1079175;no;DB16828

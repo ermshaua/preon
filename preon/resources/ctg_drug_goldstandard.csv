@@ -1,4 +1,4 @@
-﻿treatment;drug_name;nct_id;chembl_id;treatment_type;DrugBank
+﻿treatment;drug_name;nct_id;chembl_id;treatment_type;drugbank_id
 Chemotherapy;Chemotherapy;NCT00087776;;Drug;
 UV1 vaccine + leukine;UV1 vaccine;NCT04300244;;Biological;
 BI 860585;BI 860585;NCT01938846;;Drug;
