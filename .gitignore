@@ -24,6 +24,7 @@ __pycache__
 .recommenders/
 .DS_Store
 
-do_cancers.obo
+do.obo
+mesh.xml
 ebi_drugs.csv
 drugbank_drugs.csv

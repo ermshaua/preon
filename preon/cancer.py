@@ -4,8 +4,10 @@ ABS_PATH = os.path.dirname(os.path.abspath(__file__))
 import pandas as pd
 import daproli as dp
 
+from lxml import etree
 
-def download_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo"):
+
+def download_do(file_path=f"{ABS_PATH}/resources/do.obo"):
     '''
     Downloads and stores the disease ontology.
 
@@ -15,7 +17,7 @@ def download_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo"):
 
     Examples
     -----------
-    >>> download_do_cancers()
+    >>> download_do()
     '''
     url = "https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/doid.obo"
 
@@ -26,7 +28,28 @@ def download_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo"):
         file.write(ot)
 
 
-def load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo", expand_doids=False):
+def download_mesh(file_path=f"{ABS_PATH}/resources/mesh.xml"):
+    '''
+    Downloads and stores the MeSH data.
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the mesh data should be stored.
+
+    Examples
+    -----------
+    >>> download_mesh()
+    '''
+    url = "https://nlmpubs.nlm.nih.gov/projects/mesh/MESH_FILES/xmlmesh/desc2022.xml"
+
+    with urllib.request.urlopen(url) as file:
+        ot = file.read().decode('utf-8')
+
+    with open(file_path, "w") as file:
+        file.write(ot)
+
+
+def load_do_cancers(file_path=f"{ABS_PATH}/resources/do.obo", expand_doids=False):
     '''
     Loads the disease ontology.
 
@@ -82,6 +105,31 @@ def load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo", expand_doi
     return cancer_types, doids
 
 
+def load_mesh_desc(file_path=f"{ABS_PATH}/resources/mesh.xml"):
+    '''
+    Loads the mesh descriptors.
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the mesh data is stored.
+    :return: a tupel of mesh descriptors with associated mesh ids.
+
+    Examples
+    -----------
+    >>> disease_types, mesh_ids = load_mesh_desc()
+    '''
+    with open(file_path, 'r') as f:
+        tree = etree.parse(f, etree.HTMLParser())
+
+    disease_types, mesh_ids = [], []
+
+    for desc_record in tree.getroot().xpath("//descriptorrecord"):
+        disease_types.append(desc_record.xpath("descriptorname/string")[0].text)
+        mesh_ids.append("MESH:" + desc_record.xpath("descriptorui")[0].text)
+
+    return disease_types, mesh_ids
+
+
 def download_or_load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo", expand_doids=False):
     '''
     Downloads or loads the disease ontology (depending whether it is stored or not).
@@ -97,9 +145,28 @@ def download_or_load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo"
     >>> cancer_types, doids = download_or_load_do_cancers()
     '''
     if not os.path.exists(file_path):
-        download_do_cancers(file_path)
+        download_do(file_path)
 
     return load_do_cancers(file_path=file_path, expand_doids=expand_doids)
+
+
+def download_or_load_mesh_desc(file_path=f"{ABS_PATH}/resources/mesh.xml"):
+    '''
+    Downloads or loads the mesh data (depending whether it is stored or not).
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the mesh data is/should be stored.
+    :return: a tupel of mesh descriptors with associated mesh ids.
+
+    Examples
+    -----------
+    >>> disease_types, mesh_ids = download_or_load_mesh_desc()
+    '''
+    if not os.path.exists(file_path):
+        download_mesh(file_path)
+
+    return load_mesh_desc(file_path=file_path)
 
 
 def load_do_flat_mapping(file_path=f"{ABS_PATH}/resources/do_cancers.obo"):
@@ -198,26 +265,32 @@ def load_database_cancer_goldstandard(file_path=f"{ABS_PATH}/resources/database_
     Parameters
     -----------
     :param file_path: the file path at which the gold standard is located.
-    :return: a tupel of cancer types with associated doids.
+    :return: a tupel of cancer types with associated doids and mesh ids.
 
     Examples
     -----------
-    >>> cancer_types, doids = load_database_cancer_goldstandard()
+    >>> cancer_types, doids, mesh_ids = load_database_cancer_goldstandard()
     '''
-    df = pd.read_csv(file_path)
-    sources, cancer_types, doids = [], [], []
+    df = pd.read_csv(file_path, sep=";")
+    sources, cancer_types, doids, mesh_ids = [], [], [], []
 
-    for _, (cancer_type, doid, source) in df.iterrows():
+    for _, (cancer_type, doid, source, mesh_id) in df.iterrows():
         if doid != doid:
             doid = [None]
         else:
             doid = doid.split(',')
 
+        if mesh_id != mesh_id:
+            mesh_id = [None]
+        else:
+            mesh_id = mesh_id.split(',')
+
         sources.append(source)
         cancer_types.append(cancer_type)
         doids.append(doid)
+        mesh_ids.append(mesh_id)
 
-    return cancer_types, doids
+    return cancer_types, doids, mesh_ids
 
 
 def load_ncbi_cancer_goldstandard(file_path=f"{ABS_PATH}/resources/ncbi_cancer_goldstandard.csv"):
@@ -227,24 +300,29 @@ def load_ncbi_cancer_goldstandard(file_path=f"{ABS_PATH}/resources/ncbi_cancer_g
     Parameters
     -----------
     :param file_path: the file path at which the gold standard is located.
-    :return: a tupel of cancer types with associated doids.
+    :return: a tupel of cancer types with associated doids and mesh ids.
 
     Examples
     -----------
-    >>> cancer_types, doids = load_ncbi_cancer_goldstandard()
+    >>> cancer_types, doids, mesh_ids = load_ncbi_cancer_goldstandard()
     '''
-    df = pd.read_csv(file_path)
+    df = pd.read_csv(file_path, sep=";")
 
-    cancer_types = []
-    dids = []
+    cancer_types, dids, mids = [], [], []
 
     for ncbi_name, df_group in df.groupby("cancer"):
         cancer_types.append(ncbi_name)
         doids = df_group["doid"].unique().tolist()
+        mesh_ids = df_group["mesh"].unique().tolist()
 
         if len(doids) == 1 and doids[0] != doids[0]:
             dids.append([None])
         else:
             dids.append(doids)
 
-    return cancer_types, dids
+        if len(mesh_ids) == 1 and mesh_ids[0] != mesh_ids[0]:
+            mids.append([None])
+        else:
+            mids.append(dp.flatten([_.split(',') for _ in mesh_ids if _ == _]))
+
+    return cancer_types, dids, mids
