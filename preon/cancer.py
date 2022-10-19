@@ -105,9 +105,9 @@ def load_do_cancers(file_path=f"{ABS_PATH}/resources/do.obo", expand_doids=False
     return cancer_types, doids
 
 
-def load_mesh_desc(file_path=f"{ABS_PATH}/resources/mesh.xml"):
+def load_mesh_cancers(file_path=f"{ABS_PATH}/resources/mesh.xml"):
     '''
-    Loads the mesh descriptors.
+    Loads the mesh cancer descriptors.
 
     Parameters
     -----------
@@ -116,7 +116,7 @@ def load_mesh_desc(file_path=f"{ABS_PATH}/resources/mesh.xml"):
 
     Examples
     -----------
-    >>> disease_types, mesh_ids = load_mesh_desc()
+    >>> disease_types, mesh_ids = load_mesh_cancers()
     '''
     with open(file_path, 'r') as f:
         tree = etree.parse(f, etree.HTMLParser())
@@ -124,6 +124,10 @@ def load_mesh_desc(file_path=f"{ABS_PATH}/resources/mesh.xml"):
     disease_types, mesh_ids = [], []
 
     for desc_record in tree.getroot().xpath("//descriptorrecord"):
+        # check that record is a neoplasm
+        tree_entries = [entry.text for entry in desc_record.xpath("treenumberlist/treenumber")]
+        if not any(entry.startswith("C04") for entry in tree_entries): continue
+
         disease_types.append(desc_record.xpath("descriptorname/string")[0].text)
         mesh_ids.append("MESH:" + desc_record.xpath("descriptorui")[0].text)
 
@@ -150,9 +154,9 @@ def download_or_load_do_cancers(file_path=f"{ABS_PATH}/resources/do_cancers.obo"
     return load_do_cancers(file_path=file_path, expand_doids=expand_doids)
 
 
-def download_or_load_mesh_desc(file_path=f"{ABS_PATH}/resources/mesh.xml"):
+def download_or_load_mesh_cancers(file_path=f"{ABS_PATH}/resources/mesh.xml"):
     '''
-    Downloads or loads the mesh data (depending whether it is stored or not).
+    Downloads or loads the mesh cancer data (depending whether it is stored or not).
 
     Parameters
     -----------
@@ -161,12 +165,12 @@ def download_or_load_mesh_desc(file_path=f"{ABS_PATH}/resources/mesh.xml"):
 
     Examples
     -----------
-    >>> disease_types, mesh_ids = download_or_load_mesh_desc()
+    >>> disease_types, mesh_ids = download_or_load_mesh_cancers()
     '''
     if not os.path.exists(file_path):
         download_mesh(file_path)
 
-    return load_mesh_desc(file_path=file_path)
+    return load_mesh_cancers(file_path=file_path)
 
 
 def load_do_flat_mapping(file_path=f"{ABS_PATH}/resources/do_cancers.obo"):
