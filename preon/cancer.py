@@ -262,14 +262,15 @@ def apply_do_flat_mapping_to_goldstandard(cancer_types, doids, do_flat_mapping):
     return new_cancer_types, new_doids
 
 
-def load_database_cancer_goldstandard(file_path=f"{ABS_PATH}/resources/database_cancer_goldstandard.csv"):
+def load_database_cancer_goldstandard(file_path=f"{ABS_PATH}/resources/database_cancer_goldstandard.csv", return_source=False):
     '''
     Loads our provided database gold standard.
 
     Parameters
     -----------
     :param file_path: the file path at which the gold standard is located.
-    :return: a tupel of cancer types with associated doids and mesh ids.
+    :param return_source: return the data base from which an entry originates.
+    :return: a tupel of cancer types (and their sources) with associated doids and mesh ids.
 
     Examples
     -----------
@@ -293,6 +294,9 @@ def load_database_cancer_goldstandard(file_path=f"{ABS_PATH}/resources/database_
         cancer_types.append(cancer_type)
         doids.append(doid)
         mesh_ids.append(mesh_id)
+
+    if return_source is True:
+        return cancer_types, sources, doids, mesh_ids
 
     return cancer_types, doids, mesh_ids
 
