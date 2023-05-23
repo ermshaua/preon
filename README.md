@@ -4,7 +4,7 @@ preon is a fuzzy search tool for medical entities.
 ## Installation
 
 You can install preon with PyPi:
-`python -m pip install {todo}`
+`python -m pip install git+https://github.com/ermshaua/preon`
 
 ## Examples
 
