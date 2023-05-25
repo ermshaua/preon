@@ -4,7 +4,7 @@ preon is a fuzzy search tool for medical entities.
 ## Installation
 
 You can install preon with PyPi:
-`python -m pip install git+https://github.com/ermshaua/preon`
+`python -m pip install preon`
 
 ## Examples
 
@@ -15,7 +15,7 @@ Let's first import the normalizer and EBI drug names with CHEMBL ids.
 >>> from preon.drug import load_ebi_drugs
 ```
 
-Before we fit the normalizer with the drug names and ids as its reference data, download the <a href="https://www.ebi.ac.uk/chembl/g/#search_results/compounds">EBI compound CSV file</a> and place it into the resources folder `preon/resources/ebi_drugs.csv` where it is expected. Unfortunately, we cannot easily download the drug names automatically.
+Before we fit the normalizer with the drug names and ids as its reference data, download the <a href="https://www.ebi.ac.uk/chembl/g/#search_results/compounds">EBI compound CSV file</a> and place it into the resources folder `preon/resources/ebi_drugs.csv` where it is expected (or specify another folder). Unfortunately, we cannot easily download the drug names automatically.
 
 ```python3
 >>> drug_names, chembl_ids = load_ebi_drugs()
@@ -45,4 +45,18 @@ We find the relevant drug name `['ixabepilone']` and preon provides the meta inf
 
 preon finds the correct drug "Isavuconazonium" and provides the meta information that it is a partial match with 7% distance. It returns drug names with a distance smaller than 20% on default. In order to change this parameter, set the `threshold` argument in the query method.
 
-In a similar fashion you can normalize cancer types or genes. we provide gold standards for preon with which we test it. For more detail, see the example <a href="https://github.com/ermshaua/preon/tree/main/preon/examples">notebooks</a>. We also use preon in practice to normalize and integrate medical data in the <a href="https://predict.informatik.hu-berlin.de/">PREDICT</a> project. 
+In a similar fashion you can normalize cancer types or genes. we provide gold standards for preon with which we test it. For more detail, see the example <a href="https://github.com/ermshaua/preon/tree/main/preon/examples">notebooks</a>. We also use preon in practice to normalize and integrate medical data in the <a href="https://predict.informatik.hu-berlin.de/">PREDICT</a> project.
+
+## Citation
+
+The preon package is actively maintained, updated and intended for application. If you use it in your scientific publication, we would appreciate the following <a href="https://doi.org/10.1101/2023.05.22.540912" target="_blank">citation</a>:
+
+```
+@article {preon2023,
+	author = {Arik Ermshaus and Michael Piechotta and Gina R{\"u}ter and Ulrich Keilholz and Ulf Leser and Manuela Benary},
+	title = {preon: Fast and accurate entity normalization for drug names and cancer types in precision oncology},
+	year = {2023},
+	doi = {10.1101/2023.05.22.540912},
+	journal = {bioRxiv}
+}
+```
