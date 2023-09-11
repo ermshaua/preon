@@ -1,12 +1,12 @@
+import re
+import time
+import warnings
+
+import jellyfish
 import numpy as np
 import pandas as pd
-
-import time
-import jellyfish
-import re
-
-from tqdm import tqdm
 from nltk import ngrams
+from tqdm import tqdm
 
 
 class PrecisionOncologyNormalizer:
@@ -20,6 +20,9 @@ class PrecisionOncologyNormalizer:
     >>> normalizer.query("Avastin")
     (['avastin'], [['CHEMBL1201583']], {'match_type': 'exact'})
     '''
+
+    def __init__(self, enable_warnings=True):
+        self.enable_warnings = enable_warnings
 
     def _transform_name(self, name):
         name = name.lower()
@@ -42,6 +45,13 @@ class PrecisionOncologyNormalizer:
         name_ids = [np.unique(self.names[found_name]).tolist() for found_name in found_names]
         return found_names, name_ids, meta_info
 
+    def _get_empty_result(self, query_name):
+        if self.enable_warnings:
+            warnings.warn(
+                f"Cannot match {query_name} to reference data. Try changing the partial matching threshold or number of n-grams.")
+
+        return None
+
     def query(self, query_name, match_type="all", threshold=.2, n_grams=1, n_decimals=3):
         _query_name = self._transform_name(query_name)
         meta_info = dict()
@@ -59,7 +69,7 @@ class PrecisionOncologyNormalizer:
 
             substrings = query_name.split(" ")
 
-            for i_gram in range(2, n_grams+1):
+            for i_gram in range(2, n_grams + 1):
                 grams = ngrams(substrings, i_gram)
                 grams = [" ".join(gram) for gram in grams]
                 substrings.extend(grams)
@@ -93,7 +103,7 @@ class PrecisionOncologyNormalizer:
             min_dist = np.min(distances)
 
             if min_dist > threshold:
-                return None
+                return self._get_empty_result(query_name)
 
             meta_info["edit_distance"] = min_dist
             names_idx = np.isin(distances, min_dist)
@@ -101,7 +111,7 @@ class PrecisionOncologyNormalizer:
 
             return self._get_query_result(names[names_idx].tolist(), meta_info)
 
-        return None
+        return self._get_empty_result(query_name)
 
     def transform(self, names, verbose=0, **query_args):
         df = []
@@ -116,9 +126,12 @@ class PrecisionOncologyNormalizer:
                 continue
 
             found_names, found_ids, meta_info = res
-            df.append((name, found_names, found_ids, meta_info["match_type"], meta_info.get("edit_distance", None), query_time))
+            df.append((name, found_names, found_ids, meta_info["match_type"], meta_info.get("edit_distance", None),
+                       query_time))
 
-        df = pd.DataFrame.from_records(df, columns=["Name", "Found Names", "Found Name IDs", "Match Type", "Edit Distance", "Query Time"])
+        df = pd.DataFrame.from_records(df,
+                                       columns=["Name", "Found Names", "Found Name IDs", "Match Type", "Edit Distance",
+                                                "Query Time"])
         return df
 
     def evaluate(self, X, y, verbose=0, **query_args):
@@ -140,5 +153,6 @@ class PrecisionOncologyNormalizer:
 
         df["Correct Match"] = correct_matches
 
-        df = df[["Name", "Found Names", "Name IDs", "Found Name IDs", "Match Type", "Correct Match", "Edit Distance", "Query Time"]]
+        df = df[["Name", "Found Names", "Name IDs", "Found Name IDs", "Match Type", "Correct Match", "Edit Distance",
+                 "Query Time"]]
         return df
