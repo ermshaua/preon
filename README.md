@@ -12,10 +12,16 @@ Let's first import the normalizer and EBI drug names with CHEMBL ids.
 
 ```python3
 >>> from preon.normalization import PrecisionOncologyNormalizer
->>> from preon.drug import load_ebi_drugs
+>>> from preon.drug import store_ebi_drugs, load_ebi_drugs
 ```
 
-Before we fit the normalizer with the drug names and ids as its reference data, download the <a href="https://www.ebi.ac.uk/chembl/g/#search_results/compounds">EBI compound CSV file</a> and place it into the resources folder `preon/resources/ebi_drugs.csv` where it is expected (or specify another folder). Unfortunately, we cannot easily download the drug names automatically.
+First, download the <a href="https://www.ebi.ac.uk/chembl/g/#search_results/compounds">EBI compound CSV file</a> and store it as a local resource. This process only has to be performed when the resource file is created or updated. 
+
+```python3
+>>> store_ebi_drugs("/Users/Username/Downloads/compounds.csv")
+```
+
+Next, we can fit the normalizer with the drug names and ids as its reference data.
 
 ```python3
 >>> drug_names, chembl_ids = load_ebi_drugs()

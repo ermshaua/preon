@@ -1,8 +1,54 @@
 import os
+import shutil
+
 ABS_PATH = os.path.dirname(os.path.abspath(__file__))
 
 import numpy as np
 import pandas as pd
+
+
+def _store_resource_file(file_path, resource_file_name):
+    '''
+    Internal helper function to store a file in the resource directory.
+
+    Parameters
+    -----------
+    :param file_path: the file that should be stored.
+    :param resource_file_name: The file name in the resource folder.
+
+    Examples
+    -----------
+    >>> _store_resource_file("/Users/username/Downloads/compounds.csv", "ebi_drugs.csv")
+    '''
+    resource_path = f"{ABS_PATH}/resources/"
+
+    if not os.path.exists(resource_path):
+        os.makedirs(resource_path)
+
+    resource_file = os.path.join(resource_path, resource_file_name)
+    shutil.copy(file_path, resource_file)
+
+
+def store_ebi_drugs(file_path):
+    '''
+    Stores EBI drug names downloaded from https://www.ebi.ac.uk/chembl/g/#search_results/compounds
+    as a CSV file in the local resources folder.
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the EBI compund file is located
+
+    Examples
+    -----------
+    >>> store_ebi_drugs(file_path="/Users/Username/Downloads/compounds.csv")
+    '''
+    columns = ["Name", "Synonyms", "ChEMBL ID"]
+    header = pd.read_csv(file_path, delimiter=';', nrows=0)
+
+    if not all(column in header.columns for column in columns):
+        raise ValueError(f"EBI drug names file must include: {columns}")
+
+    _store_resource_file(file_path, "ebi_drugs.csv")
 
 
 def load_ebi_drugs(file_path=f"{ABS_PATH}/resources/ebi_drugs.csv"):
@@ -18,10 +64,7 @@ def load_ebi_drugs(file_path=f"{ABS_PATH}/resources/ebi_drugs.csv"):
     -----------
     >>> drug_names, chembl_ids = load_ebi_drugs()
     '''
-    df = pd.read_csv(file_path, delimiter=';', low_memory=False)
-
-    # reduce size
-    df = df[["Name", "Synonyms", "ChEMBL ID"]]
+    df = pd.read_csv(file_path, delimiter=';', low_memory=False, usecols=["Name", "Synonyms", "ChEMBL ID"])
 
     # filter df
     df = df[df.Name.notna() & df["ChEMBL ID"].notna()]
@@ -46,6 +89,28 @@ def load_ebi_drugs(file_path=f"{ABS_PATH}/resources/ebi_drugs.csv"):
             chembl_ids.extend([chembl_id] * len(names))
 
     return drug_names, chembl_ids
+
+
+def store_drugbank_drugs(file_path):
+    '''
+    Stores DrugBank drug names downloaded from https://go.drugbank.com/releases/latest#open-data
+    as a CSV file in the local resources folder.
+
+    Parameters
+    -----------
+    :param file_path: the file path at which the DB compund file is located
+
+    Examples
+    -----------
+    >>> store_drugbank_drugs(file_path="/Users/Username/Downloads/compounds.csv")
+    '''
+    columns = ["Common name", "Synonyms", "DrugBank ID"]
+    header = pd.read_csv(file_path, delimiter=',', nrows=0)
+
+    if not all(column in header.columns for column in columns):
+        raise ValueError(f"DrugBank drug names file must include: {columns}")
+
+    _store_resource_file(file_path, "drugbank_drugs.csv")
 
 
 def load_drugbank_drugs(file_path=f"{ABS_PATH}/resources/drugbank_drugs.csv"):

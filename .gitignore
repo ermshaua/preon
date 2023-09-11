@@ -18,6 +18,7 @@ __pycache__
 .pyc
 .cache/
 .ipynb_checkpoints/
+.eggs/
 
 # Other
 .metadata/
@@ -25,6 +26,7 @@ __pycache__
 .DS_Store
 
 do.obo
+do_cancers.obo
 mesh.xml
 ebi_drugs.csv
 drugbank_drugs.csv
