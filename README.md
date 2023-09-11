@@ -46,7 +46,7 @@ We find the relevant drug name `['ixabepilone']` and preon provides the meta inf
 
 ```python3
 >>> normalizer.query("Isavuconaconium")
-(['isavuconazonium'], [['CHEMBL1183349']], {'match_type': 'partial', 'edit_distance': 0.0667})
+(['isavuconazonium'], [['CHEMBL1183349']], {'match_type': 'partial', 'edit_distance': 0.067})
 ```
 
 preon finds the correct drug "Isavuconazonium" and provides the meta information that it is a partial match with 7% distance. It returns drug names with a distance smaller than 20% on default. In order to change this parameter, set the `threshold` argument in the query method.

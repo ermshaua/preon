@@ -42,7 +42,7 @@ class PrecisionOncologyNormalizer:
         name_ids = [np.unique(self.names[found_name]).tolist() for found_name in found_names]
         return found_names, name_ids, meta_info
 
-    def query(self, query_name, match_type="all", threshold=.2, n_grams=1):
+    def query(self, query_name, match_type="all", threshold=.2, n_grams=1, n_decimals=3):
         _query_name = self._transform_name(query_name)
         meta_info = dict()
 
@@ -87,13 +87,16 @@ class PrecisionOncologyNormalizer:
                 dist = jellyfish.levenshtein_distance(_query_name, name) / max(len(_query_name), len(name))
                 distances.append(dist)
 
-            distances = np.array(distances)
+            if n_decimals is not None:
+                distances = np.round(distances, n_decimals)
 
-            if np.min(distances) > threshold:
+            min_dist = np.min(distances)
+
+            if min_dist > threshold:
                 return None
 
-            meta_info["edit_distance"] = np.min(distances)
-            names_idx = np.isin(distances, meta_info["edit_distance"])
+            meta_info["edit_distance"] = min_dist
+            names_idx = np.isin(distances, min_dist)
             names = np.array(names)
 
             return self._get_query_result(names[names_idx].tolist(), meta_info)

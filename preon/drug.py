@@ -71,22 +71,22 @@ def load_ebi_drugs(file_path=f"{ABS_PATH}/resources/ebi_drugs.csv"):
 
     drug_names, chembl_ids = [], []
 
-    for idx, (name, synonyms, chembl_id) in df.iterrows():
+    for idx, row in df.iterrows():
         names = []
 
         # check for empty, add name
-        if len(name) > 0:
-            names.append(name)
+        if len(row["Name"]) > 0:
+            names.append(row["Name"])
 
         # check for nan/empty, add synonyms
-        if isinstance(synonyms, str) and len(synonyms) > 0:
-            for s in synonyms.split("|"):
+        if isinstance(row["Synonyms"], str) and len(row["Synonyms"]) > 0:
+            for s in row["Synonyms"].split("|"):
                 names.append(s)
 
-        # check for empty, add chembl id
-        if len(chembl_id) > 0:
+        # check for nan/empty, add chembl id
+        if isinstance(row["ChEMBL ID"], str) and len(row["ChEMBL ID"]) > 0:
             drug_names.extend(names)
-            chembl_ids.extend([chembl_id] * len(names))
+            chembl_ids.extend([row["ChEMBL ID"]] * len(names))
 
     return drug_names, chembl_ids
 
