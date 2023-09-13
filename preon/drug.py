@@ -2,6 +2,8 @@ import os
 import shutil
 
 ABS_PATH = os.path.dirname(os.path.abspath(__file__))
+EBI_COLS = ["Name", "Synonyms", "ChEMBL ID"]
+DB_COLS = ["Common name", "Synonyms", "DrugBank ID"]
 
 import numpy as np
 import pandas as pd
@@ -13,8 +15,8 @@ def _store_resource_file(file_path, resource_file_name):
 
     Parameters
     -----------
-    :param file_path: the file that should be stored.
-    :param resource_file_name: The file name in the resource folder.
+    :param file_path: the path to the local file which should be included in the preon instance
+    :param resource_file_name: the file name in the resource folder
 
     Examples
     -----------
@@ -36,17 +38,22 @@ def store_ebi_drugs(file_path):
 
     Parameters
     -----------
-    :param file_path: the file path at which the EBI compund file is located
+    :param file_path: the path to the local file which should be included in the preon instance
+
+    Raises
+    ------
+    ValueError
+        If the local file does not contain the columns "Name", "Synonyms" or "ChEMBL ID", which
+        are required to load and parse the EBI drug names.
 
     Examples
     -----------
     >>> store_ebi_drugs(file_path="/Users/Username/Downloads/compounds.csv")
     '''
-    columns = ["Name", "Synonyms", "ChEMBL ID"]
     header = pd.read_csv(file_path, delimiter=';', nrows=0)
 
-    if not all(column in header.columns for column in columns):
-        raise ValueError(f"EBI drug names file must include: {columns}")
+    if not all(column in header.columns for column in EBI_COLS):
+        raise ValueError(f"EBI drug names file must include: {EBI_COLS}")
 
     _store_resource_file(file_path, "ebi_drugs.csv")
 
@@ -64,7 +71,7 @@ def load_ebi_drugs(file_path=f"{ABS_PATH}/resources/ebi_drugs.csv"):
     -----------
     >>> drug_names, chembl_ids = load_ebi_drugs()
     '''
-    df = pd.read_csv(file_path, delimiter=';', low_memory=False, usecols=["Name", "Synonyms", "ChEMBL ID"])
+    df = pd.read_csv(file_path, delimiter=';', low_memory=False, usecols=EBI_COLS)
 
     # filter df
     df = df[df.Name.notna() & df["ChEMBL ID"].notna()]
@@ -98,17 +105,22 @@ def store_drugbank_drugs(file_path):
 
     Parameters
     -----------
-    :param file_path: the file path at which the DB compund file is located
+    :param file_path: the path to the local file which should be included in the preon instance
+
+    Raises
+    ------
+    ValueError
+        If the local file does not contain the columns "Common name", "Synonyms" or "DrugBank ID",
+        which are required to load and parse the DrugBank names.
 
     Examples
     -----------
     >>> store_drugbank_drugs(file_path="/Users/Username/Downloads/compounds.csv")
     '''
-    columns = ["Common name", "Synonyms", "DrugBank ID"]
     header = pd.read_csv(file_path, delimiter=',', nrows=0)
 
-    if not all(column in header.columns for column in columns):
-        raise ValueError(f"DrugBank drug names file must include: {columns}")
+    if not all(column in header.columns for column in DB_COLS):
+        raise ValueError(f"DrugBank drug names file must include: {DB_COLS}")
 
     _store_resource_file(file_path, "drugbank_drugs.csv")
 
@@ -150,7 +162,7 @@ def load_charite_drug_goldstandard(file_path=f"{ABS_PATH}/resources/charite_drug
 
     Parameters
     -----------
-    :param file_path: the file path at which the gold standard is located.
+    :param file_path: the file path at which the gold standard is located
     :return: a tupel of drug names with associated chembl ids and drugbank ids
 
     Examples
@@ -180,7 +192,7 @@ def load_database_drug_goldstandard(file_path=f"{ABS_PATH}/resources/database_dr
 
     Parameters
     -----------
-    :param file_path: the file path at which the gold standard is located.
+    :param file_path: the file path at which the gold standard is located
     :return: a tupel of drug names with associated chembl ids and drugbank ids
 
     Examples
@@ -203,7 +215,7 @@ def load_ctg_drug_goldstandard(file_path=f"{ABS_PATH}/resources/ctg_drug_goldsta
 
     Parameters
     -----------
-    :param file_path: the file path at which the gold standard is located.
+    :param file_path: the file path at which the gold standard is located
     :return: a tupel of drug names with associated chembl ids and drugbank ids
 
     Examples

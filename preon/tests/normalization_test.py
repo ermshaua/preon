@@ -1,13 +1,36 @@
+import os
+import shutil
+import tempfile
 import unittest
 
-from preon.normalization import PrecisionOncologyNormalizer
-from preon.drug import load_ebi_drugs, load_charite_drug_goldstandard, load_database_drug_goldstandard, load_ctg_drug_goldstandard
-from preon.cancer import download_or_load_do_cancers, load_do_flat_mapping, apply_do_flat_mapping_to_ontology, apply_do_flat_mapping_to_goldstandard, \
+from preon.cancer import download_or_load_do_cancers, load_do_flat_mapping, apply_do_flat_mapping_to_ontology, \
+    apply_do_flat_mapping_to_goldstandard, \
     load_database_cancer_goldstandard, load_ncbi_cancer_goldstandard
+from preon.drug import load_ebi_drugs, load_charite_drug_goldstandard, load_database_drug_goldstandard, \
+    load_ctg_drug_goldstandard, store_ebi_drugs, store_drugbank_drugs, load_drugbank_drugs
+from preon.normalization import PrecisionOncologyNormalizer
 from preon.tests.utils import f1_score
 
 
 class DrugNormalizationTest(unittest.TestCase):
+
+    def test_store_load_resources(self):
+        abs_path = os.path.dirname(os.path.abspath(__file__))
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            file_path = f"{abs_path}/../resources/ebi_drugs.csv"
+            tmp_file = os.path.join(tmp_dir, "compounds.csv")
+            shutil.copy(file_path, tmp_file)
+
+            store_ebi_drugs(tmp_file)
+            load_ebi_drugs()
+
+            file_path = f"{abs_path}/../resources/drugbank_drugs.csv"
+            tmp_file = os.path.join(tmp_dir, "compounds.csv")
+            shutil.copy(file_path, tmp_file)
+
+            store_drugbank_drugs(tmp_file)
+            load_drugbank_drugs()
 
     def test_charite_drug_goldstandard(self):
         drug_names, chembl_ids = load_ebi_drugs()
@@ -63,7 +86,7 @@ class CancerNormalizationTest(unittest.TestCase):
         cancer_types, doids = download_or_load_do_cancers()
         do_flat_mapping = load_do_flat_mapping()
 
-        cancer_types, doids= apply_do_flat_mapping_to_ontology(cancer_types, doids, do_flat_mapping)
+        cancer_types, doids = apply_do_flat_mapping_to_ontology(cancer_types, doids, do_flat_mapping)
         normalizer = PrecisionOncologyNormalizer(enable_warnings=False).fit(cancer_types, doids)
 
         cancer_types, doids, _ = load_database_cancer_goldstandard()
