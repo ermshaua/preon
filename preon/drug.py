@@ -1,8 +1,61 @@
 import os
+import shutil
+
 ABS_PATH = os.path.dirname(os.path.abspath(__file__))
+EBI_COLS = ["Name", "Synonyms", "ChEMBL ID"]
+DB_COLS = ["Common name", "Synonyms", "DrugBank ID"]
 
 import numpy as np
 import pandas as pd
+
+
+def _store_resource_file(file_path, resource_file_name):
+    '''
+    Internal helper function to store a file in the resource directory.
+
+    Parameters
+    -----------
+    :param file_path: the path to the local file which should be included in the preon instance
+    :param resource_file_name: the file name in the resource folder
+
+    Examples
+    -----------
+    >>> _store_resource_file("/Users/username/Downloads/compounds.csv", "ebi_drugs.csv")
+    '''
+    resource_path = f"{ABS_PATH}/resources/"
+
+    if not os.path.exists(resource_path):
+        os.makedirs(resource_path)
+
+    resource_file = os.path.join(resource_path, resource_file_name)
+    shutil.copy(file_path, resource_file)
+
+
+def store_ebi_drugs(file_path):
+    '''
+    Stores EBI drug names downloaded from https://www.ebi.ac.uk/chembl/g/#search_results/compounds
+    as a CSV file in the local resources folder.
+
+    Parameters
+    -----------
+    :param file_path: the path to the local file which should be included in the preon instance
+
+    Raises
+    ------
+    ValueError
+        If the local file does not contain the columns "Name", "Synonyms" or "ChEMBL ID", which
+        are required to load and parse the EBI drug names.
+
+    Examples
+    -----------
+    >>> store_ebi_drugs(file_path="/Users/Username/Downloads/compounds.csv")
+    '''
+    header = pd.read_csv(file_path, delimiter=';', nrows=0)
+
+    if not all(column in header.columns for column in EBI_COLS):
+        raise ValueError(f"EBI drug names file must include: {EBI_COLS}")
+
+    _store_resource_file(file_path, "ebi_drugs.csv")
 
 
 def load_ebi_drugs(file_path=f"{ABS_PATH}/resources/ebi_drugs.csv"):
@@ -18,34 +71,58 @@ def load_ebi_drugs(file_path=f"{ABS_PATH}/resources/ebi_drugs.csv"):
     -----------
     >>> drug_names, chembl_ids = load_ebi_drugs()
     '''
-    df = pd.read_csv(file_path, delimiter=';', low_memory=False)
-
-    # reduce size
-    df = df[["Name", "Synonyms", "ChEMBL ID"]]
+    df = pd.read_csv(file_path, delimiter=';', low_memory=False, usecols=EBI_COLS)
 
     # filter df
     df = df[df.Name.notna() & df["ChEMBL ID"].notna()]
 
     drug_names, chembl_ids = [], []
 
-    for idx, (name, synonyms, chembl_id) in df.iterrows():
+    for idx, row in df.iterrows():
         names = []
 
         # check for empty, add name
-        if len(name) > 0:
-            names.append(name)
+        if len(row["Name"]) > 0:
+            names.append(row["Name"])
 
         # check for nan/empty, add synonyms
-        if isinstance(synonyms, str) and len(synonyms) > 0:
-            for s in synonyms.split("|"):
+        if isinstance(row["Synonyms"], str) and len(row["Synonyms"]) > 0:
+            for s in row["Synonyms"].split("|"):
                 names.append(s)
 
-        # check for empty, add chembl id
-        if len(chembl_id) > 0:
+        # check for nan/empty, add chembl id
+        if isinstance(row["ChEMBL ID"], str) and len(row["ChEMBL ID"]) > 0:
             drug_names.extend(names)
-            chembl_ids.extend([chembl_id] * len(names))
+            chembl_ids.extend([row["ChEMBL ID"]] * len(names))
 
     return drug_names, chembl_ids
+
+
+def store_drugbank_drugs(file_path):
+    '''
+    Stores DrugBank drug names downloaded from https://go.drugbank.com/releases/latest#open-data
+    as a CSV file in the local resources folder.
+
+    Parameters
+    -----------
+    :param file_path: the path to the local file which should be included in the preon instance
+
+    Raises
+    ------
+    ValueError
+        If the local file does not contain the columns "Common name", "Synonyms" or "DrugBank ID",
+        which are required to load and parse the DrugBank names.
+
+    Examples
+    -----------
+    >>> store_drugbank_drugs(file_path="/Users/Username/Downloads/compounds.csv")
+    '''
+    header = pd.read_csv(file_path, delimiter=',', nrows=0)
+
+    if not all(column in header.columns for column in DB_COLS):
+        raise ValueError(f"DrugBank drug names file must include: {DB_COLS}")
+
+    _store_resource_file(file_path, "drugbank_drugs.csv")
 
 
 def load_drugbank_drugs(file_path=f"{ABS_PATH}/resources/drugbank_drugs.csv"):
@@ -85,7 +162,7 @@ def load_charite_drug_goldstandard(file_path=f"{ABS_PATH}/resources/charite_drug
 
     Parameters
     -----------
-    :param file_path: the file path at which the gold standard is located.
+    :param file_path: the file path at which the gold standard is located
     :return: a tupel of drug names with associated chembl ids and drugbank ids
 
     Examples
@@ -115,7 +192,7 @@ def load_database_drug_goldstandard(file_path=f"{ABS_PATH}/resources/database_dr
 
     Parameters
     -----------
-    :param file_path: the file path at which the gold standard is located.
+    :param file_path: the file path at which the gold standard is located
     :return: a tupel of drug names with associated chembl ids and drugbank ids
 
     Examples
@@ -138,7 +215,7 @@ def load_ctg_drug_goldstandard(file_path=f"{ABS_PATH}/resources/ctg_drug_goldsta
 
     Parameters
     -----------
-    :param file_path: the file path at which the gold standard is located.
+    :param file_path: the file path at which the gold standard is located
     :return: a tupel of drug names with associated chembl ids and drugbank ids
 
     Examples
