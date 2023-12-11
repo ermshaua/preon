@@ -49,9 +49,14 @@ We find the relevant drug name `['ixabepilone']` and preon provides the meta inf
 (['isavuconazonium'], [['CHEMBL1183349']], {'match_type': 'partial', 'edit_distance': 0.067})
 ```
 
-preon finds the correct drug "Isavuconazonium" and provides the meta information that it is a partial match with 7% distance. It returns drug names with a distance smaller than 20% on default. In order to change this parameter, set the `threshold` argument in the query method.
+preon finds the correct drug "Isavuconazonium" and provides the meta information that it is a partial match with 7% distance. It returns drug names with a distance smaller than 20% on default. In order to change this parameter, set the `threshold` argument in the query method. If preon cannot normalize the query, it returns `None` and issues a user warning.
 
-In a similar fashion you can normalize cancer types or genes. we provide gold standards for preon with which we test it. For more detail, see the example <a href="https://github.com/ermshaua/preon/tree/main/preon/examples">notebooks</a>. We also use preon in practice to normalize and integrate medical data in the <a href="https://predict.informatik.hu-berlin.de/">PREDICT</a> project.
+```python3
+>>> normalizer.query("risolipase en.")
+preon/normalization.py:50: UserWarning: Cannot match risolipase en. to reference data. Try changing the partial matching threshold or number of n-grams.
+```
+
+For automatic data integrations, warnings can be stored in a logging file, see e.g. <a href="https://github.com/ermshaua/preon/blob/main/preon/examples/drug_name_normalization.ipynb">here</a>. In a similar fashion, you can also normalize cancer types or genes. We provide gold standards for preon with which we test it. For more detail, see the example <a href="https://github.com/ermshaua/preon/tree/main/preon/examples">notebooks</a>. We also use preon in practice to normalize and integrate medical data in the <a href="https://predict.informatik.hu-berlin.de/">PREDICT</a> project.
 
 ## Citation
 

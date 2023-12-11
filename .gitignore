@@ -24,6 +24,7 @@ __pycache__
 .metadata/
 .recommenders/
 .DS_Store
+.log
 
 do.obo
 do_cancers.obo
