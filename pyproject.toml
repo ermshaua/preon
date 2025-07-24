@@ -1,7 +1,7 @@
 [project]
 name = "preon"
 
-version = "0.1.1"
+version = "0.1.2"
 
 description = ""
 readme = "README.md"
@@ -30,17 +30,19 @@ classifiers = [
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10"
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
 ]
-requires-python = ">=3.7,<3.11"
+requires-python = ">=3.7,<3.13"
 dependencies = [
     "daproli>=0.22",
     "jellyfish>=0.9.0",
-    "nltk>=3.6.5",
-    "numpy>=1.21.0,<1.25",
-    "pandas>=1.1.0,<1.6.0",
+    "nltk>=3.9",
+    "numpy>=1.21.0,<2.3.0",
+    "pandas>=2.0.0,<2.4.0",
     "pronto>=2.5.0",
-    "tqdm>=4.62.3",
+    "tqdm>=4.66.3",
     "lxml>=4.6.3"
 ]
 

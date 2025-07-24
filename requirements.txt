@@ -1,8 +1,8 @@
 daproli>=0.22
 jellyfish>=0.9.0
-nltk>=3.6.5
-numpy>=1.21.0,<1.25
-pandas>=1.1.0,<1.6.0
+nltk>=3.9
+numpy>=1.21.0,<2.3.0
+pandas>=2.0.0,<2.4.0
 pronto>=2.5.0
-tqdm>=4.62.3
+tqdm>=4.66.3
 lxml>=4.6.3

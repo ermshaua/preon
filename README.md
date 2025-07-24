@@ -15,7 +15,7 @@ Let's first import the normalizer and EBI drug names with CHEMBL ids.
 >>> from preon.drug import store_ebi_drugs, load_ebi_drugs
 ```
 
-Please download the <a href="https://www.ebi.ac.uk/chembl/g/#search_results/compounds">EBI compound CSV file</a> and store it as a local resource. This step only has to be performed when the resource file is created or updated. 
+Please download the <a href="https://www.ebi.ac.uk/chembl/explore/compounds/">EBI compound CSV file</a> and store it as a local resource. This step only has to be performed when the resource file is created or updated. 
 
 ```python3
 >>> store_ebi_drugs("/Users/Username/Downloads/compounds.csv")
@@ -56,18 +56,18 @@ preon finds the correct drug "Isavuconazonium" and provides the meta information
 preon/normalization.py:50: UserWarning: Cannot match risolipase en. to reference data. Try changing the partial matching threshold or number of n-grams.
 ```
 
-For automatic data integrations, warnings can be stored in a logging file, see e.g. <a href="https://github.com/ermshaua/preon/blob/main/preon/examples/drug_name_normalization.ipynb">here</a>. In a similar fashion, you can also normalize cancer types or genes. We provide gold standards for preon with which we test it. For more detail, see the example <a href="https://github.com/ermshaua/preon/tree/main/preon/examples">notebooks</a>. We also use preon in practice to normalize and integrate medical data in the <a href="https://predict.informatik.hu-berlin.de/">PREDICT</a> project.
+For automatic data integrations, warnings can be stored in a logging file, see e.g. <a href="https://github.com/ermshaua/preon/blob/main/preon/examples/drug_name_normalization.ipynb">here</a>. In a similar fashion, you can also normalize cancer types or genes. We provide gold standards for preon with which we test it. For more detail, see the example <a href="https://github.com/ermshaua/preon/tree/main/preon/examples">notebooks</a>. We also use preon in practice to normalize and integrate medical data in the PREDICT project.
 
 ## Citation
 
-The preon package is actively maintained, updated and intended for application. If you use it in your scientific publication, we would appreciate the following <a href="https://doi.org/10.1101/2023.05.22.540912" target="_blank">citation</a>:
+The preon package is actively maintained, updated and intended for application. If you use it in your scientific publication, we would appreciate the following <a href="https://doi.org/10.1093/bioinformatics/btae085" target="_blank">citation</a>:
 
 ```
-@article {preon2023,
-	author = {Arik Ermshaus and Michael Piechotta and Gina R{\"u}ter and Ulrich Keilholz and Ulf Leser and Manuela Benary},
-	title = {preon: Fast and accurate entity normalization for drug names and cancer types in precision oncology},
-	year = {2023},
-	doi = {10.1101/2023.05.22.540912},
-	journal = {bioRxiv}
+@article{preon2023,
+  title={preon: Fast and accurate entity normalization for drug names and cancer types in precision oncology},
+  author={Arik Ermshaus and Michael Piechotta and Gina R{\"u}ter and Ulrich Keilholz and Ulf Leser and Manuela Benary},
+  journal={Bioinformatics},
+  year={2023},
+  volume={40}
 }
 ```
